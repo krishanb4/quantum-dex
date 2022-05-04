@@ -101,4 +101,4 @@ const config = {
   },
 }
 
-module.exports = withBundleAnalyzer(withSentryConfig(config))
+module.exports = withBundleAnalyzer(withSentryConfig(config, sentryWebpackPluginOptions))
