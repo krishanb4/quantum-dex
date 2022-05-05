@@ -14,7 +14,7 @@ const isUserRejected = (err) => {
 const ENV = process.env.VERCEL_ENV || process.env.NODE_ENV
 
 Sentry.init({
-  dsn: SENTRY_DSN,
+  dsn: SENTRY_DSN || 'https://4f9027d37e364da99f850a584ff77277@o1232105.ingest.sentry.io/6380034',
   integrations: [
     new Sentry.Integrations.Breadcrumbs({
       console: ENV === 'production',
@@ -26,7 +26,7 @@ Sentry.init({
   ],
   environment: ENV === 'production' ? 'production' : 'development',
   // Adjust this value in production, or use tracesSampler for greater control
-  tracesSampleRate: 0,
+  tracesSampleRate: 1.0,
   // ...
   // Note: if you want to override the automatic release value, do not set a
   // `release` value here - use the environment variable `SENTRY_RELEASE`, so
