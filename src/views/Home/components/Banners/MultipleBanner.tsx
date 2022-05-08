@@ -87,6 +87,9 @@ const StyledSwiper = styled(Swiper)`
     }
   }
 `
+const emptyDiv = styled.div`
+  margin-top: 100px;
+`
 
 const MultipleBanner: React.FC = () => {
   const bannerList = useMultipleBannerConfig()
@@ -105,30 +108,9 @@ const MultipleBanner: React.FC = () => {
   }, [bannerList, swiperRef])
 
   return (
-    <BannerPlaceHolder walletConnected={Boolean(account)}>
-      <StyledSwiper
-        onSwiper={setSwiperRef}
-        modules={[Autoplay, Pagination, EffectFade]}
-        spaceBetween={50}
-        observer
-        slidesPerView={1}
-        effect={'fade' as const}
-        fadeEffect={{ crossFade: true }}
-        speed={500}
-        autoplay={{ delay: 5000 }}
-        loop
-        pagination={{ clickable: true }}
-      >
-        {bannerList.map((banner, index) => {
-          const childKey = `Banner${index}`
-          return (
-            <SwiperSlide style={{ padding: isDesktop || isTablet ? 20 : 0 }} key={childKey}>
-              {banner}
-            </SwiperSlide>
-          )
-        })}
-      </StyledSwiper>
-    </BannerPlaceHolder>
+    <div className={emptyDiv}>
+      <></>
+    </div>
   )
 }
 

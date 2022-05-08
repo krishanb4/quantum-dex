@@ -439,6 +439,7 @@ const tokens = {
     address: {
       56: "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
       97: "0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd",
+      180: "0x28d1F6698c20802B8c38Ae83903046F61e60F529",
     },
     decimals: 18,
     projectLink: "https://pancakeswap.finance/",

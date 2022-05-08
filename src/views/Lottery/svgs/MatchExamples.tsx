@@ -78,7 +78,7 @@ export const MatchExampleA: React.FC<{ isDark: boolean } & SvgProps> = ({ isDark
             y2="41.18"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="#ED4B9E" />
+            <stop stopColor="#ed4b9e" />
             <stop offset="0.190071" stopColor="#7B61FF" />
             <stop offset="0.434873" stopColor="#1FC7D4" />
             <stop offset="0.638006" stopColor="#31D0AA" />
