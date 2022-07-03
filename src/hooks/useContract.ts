@@ -121,10 +121,10 @@ export const useMasterchef = (withSignerIfPossible = true) => {
   )
 }
 
-export const useMasterchefV1 = () => {
-  const { library } = useActiveWeb3React()
-  return useMemo(() => getMasterchefV1Contract(library.getSigner()), [library])
-}
+// export const useMasterchefV1 = () => {
+//   const { library } = useActiveWeb3React()
+//   return useMemo(() => getMasterchefV1Contract(library.getSigner()), [library])
+// }
 
 export const useSousChef = (id) => {
   const { library } = useActiveWeb3React()
