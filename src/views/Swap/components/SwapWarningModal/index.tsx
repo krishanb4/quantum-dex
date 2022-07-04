@@ -4,7 +4,7 @@ import { ModalBody, ModalContainer, Message, ModalHeader, Box, Heading } from '@
 import useTheme from 'hooks/useTheme'
 import { useTranslation } from 'contexts/Localization'
 import { WrappedTokenInfo } from 'state/types'
-import SwapWarningTokensConfig from 'config/constants/swapWarningTokens'
+// import SwapWarningTokensConfig from 'config/constants/swapWarningTokens'
 import SafemoonWarning from './SafemoonWarning'
 import ItamWarning from './ItamWarning'
 import BondlyWarning from './BondlyWarning'
@@ -51,7 +51,7 @@ const SwapWarningModal: React.FC<SwapWarningModalProps> = ({ swapCurrency, onDis
   const { t } = useTranslation()
   const { theme } = useTheme()
   usePreventModalOverlayClick()
-
+  /* 
   const TOKEN_WARNINGS = {
     [SwapWarningTokensConfig.safemoon.address]: {
       symbol: SwapWarningTokensConfig.safemoon.symbol,
@@ -73,19 +73,15 @@ const SwapWarningModal: React.FC<SwapWarningModalProps> = ({ swapCurrency, onDis
       symbol: SwapWarningTokensConfig.bttold.symbol,
       component: <BTTWarning />,
     },
-  }
+  } */
 
-  const SWAP_WARNING = TOKEN_WARNINGS[swapCurrency.address]
+  // const SWAP_WARNING = TOKEN_WARNINGS[swapCurrency.address]
 
   return (
     <StyledModalContainer minWidth="280px">
-      <ModalHeader background={theme.colors.gradients.cardHeader}>
-        <Heading p="12px 24px">{t('Notice for trading %symbol%', { symbol: SWAP_WARNING.symbol })}</Heading>
-      </ModalHeader>
+      <ModalHeader background={theme.colors.gradients.cardHeader} />
       <ModalBody p="24px">
-        <MessageContainer variant="warning" mb="24px">
-          <Box>{SWAP_WARNING.component}</Box>
-        </MessageContainer>
+        <MessageContainer variant="warning" mb="24px" />
         <Acknowledgement handleContinueClick={onDismiss} />
       </ModalBody>
     </StyledModalContainer>

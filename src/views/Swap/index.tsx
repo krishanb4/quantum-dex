@@ -22,7 +22,7 @@ import { useTranslation } from 'contexts/Localization'
 import { EXCHANGE_DOCS_URLS } from 'config/constants'
 import { maxAmountSpend } from 'utils/maxAmountSpend'
 import { computeTradePriceBreakdown, warningSeverity } from 'utils/prices'
-import shouldShowSwapWarning from 'utils/shouldShowSwapWarning'
+// import shouldShowSwapWarning from 'utils/shouldShowSwapWarning'
 import useRefreshBlockNumberID from './hooks/useRefreshBlockNumber'
 import AddressInputPanel from './components/AddressInputPanel'
 import { GreyCard } from '../../components/Card'
@@ -297,12 +297,12 @@ export default function Swap() {
     (currencyInput) => {
       setApprovalSubmitted(false) // reset 2 step UI for approvals
       onCurrencySelection(Field.INPUT, currencyInput)
-      const showSwapWarning = shouldShowSwapWarning(currencyInput)
-      if (showSwapWarning) {
+      // const showSwapWarning = shouldShowSwapWarning(currencyInput)
+     /*  if (showSwapWarning) {
         setSwapWarningCurrency(currencyInput)
       } else {
         setSwapWarningCurrency(null)
-      }
+      } */
     },
     [onCurrencySelection],
   )
@@ -316,12 +316,12 @@ export default function Swap() {
   const handleOutputSelect = useCallback(
     (currencyOutput) => {
       onCurrencySelection(Field.OUTPUT, currencyOutput)
-      const showSwapWarning = shouldShowSwapWarning(currencyOutput)
-      if (showSwapWarning) {
+      // const showSwapWarning = shouldShowSwapWarning(currencyOutput)
+      /*      if (showSwapWarning) {
         setSwapWarningCurrency(currencyOutput)
       } else {
         setSwapWarningCurrency(null)
-      }
+      } */
     },
 
     [onCurrencySelection],

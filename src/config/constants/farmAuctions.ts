@@ -729,14 +729,6 @@ export const whitelistedBidders: FarmAuctionBidderConfig[] =
           tokenName: 'Etermon',
           projectSite: 'https://etermon.io/',
         },
-        {
-          account: '0x3b8eA037356CfD867c2191FD11614FA97BAB2772',
-          farmName: 'NBT-USDT',
-          tokenAddress: '0x1D3437E570e93581Bd94b2fd8Fbf202d4a65654A',
-          quoteToken: tokens.usdt,
-          tokenName: 'NanoByte',
-          projectSite: 'https://www.nanobyte.finance/',
-        },
       ].map((bidderConfig) => ({
         ...bidderConfig,
         lpAddress: getLpAddress(bidderConfig.tokenAddress, bidderConfig.quoteToken),

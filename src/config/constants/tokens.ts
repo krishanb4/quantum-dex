@@ -32,6 +32,14 @@ export const mainnetTokens = defineTokens({
     'QuantumDex Token',
     'https://pancakeswap.finance/',
   ),
+  syrup: new Token(
+    MAINNET,
+    '0x1B1Eb7C5bBBB0552fa430fB677393fe320E0e719',
+    18,
+    'CAKE',
+    'QuantumDex Token',
+    'https://pancakeswap.finance/',
+  ),
   // gmi: new Token(MAINNET, '0x93D8d25E3C9A847a5Da79F79ecaC89461FEcA846', 18, 'GMI', 'Gamifi', 'https://gamifi.gg/'),
   // tlos: new Token(MAINNET, '0xb6C53431608E626AC81a9776ac3e999c5556717c', 18, 'TLOS', 'Telos', 'https://www.telos.net/'),
   // beta: new Token(

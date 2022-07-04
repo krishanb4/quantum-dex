@@ -58,14 +58,14 @@ export const useFetchUserPools = (account) => {
             pendingReward: pendingRewards,
           }
 
-          setPoolsUserData((old) => ({
+          /*    setPoolsUserData((old) => ({
             data: {
               ...old.data,
               userData,
               totalStaked: new BigNumber(totalStaking.toString()).toJSON(),
             },
             userDataLoaded: true,
-          }))
+          })) */
         } catch (error) {
           console.error('[Pools Action] Error fetching pool user data', error)
         }
