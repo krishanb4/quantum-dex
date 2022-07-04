@@ -19,8 +19,6 @@ import { TokenInfo, TokenList, Tags } from '@uniswap/token-lists'
 import { parseUnits } from '@ethersproject/units'
 import { NftToken, State as NftMarketState } from './nftMarket/types'
 
-
-
 /**
  * Token instances created from token info.
  */
@@ -40,8 +38,7 @@ export class WrappedTokenInfo extends Token {
   }
 }
 
-console.log(ChainId);
-
+console.log(ChainId)
 
 export type TokenAddressMap = Readonly<{
   [chainId in ChainId]: Readonly<{ [tokenAddress: string]: { token: WrappedTokenInfo; list: TokenList } }>
@@ -560,7 +557,7 @@ export interface LotteryRoundUserTickets {
   tickets?: LotteryTicket[]
 }
 
-interface LotteryRoundGenerics {
+export interface LotteryRoundGenerics {
   isLoading?: boolean
   lotteryId: string
   status: LotteryStatus
