@@ -2748,9 +2748,9 @@
   dependencies:
     "glob" "7.1.7"
 
-"@next/swc-darwin-x64@12.1.5":
-  "integrity" "sha512-wqJ3X7WQdTwSGi0kIDEmzw34QHISRIQ5uvC+VXmsIlCPFcMA+zM5723uh8NfuKGquDMiEMS31a83QgkuHMYbwQ=="
-  "resolved" "https://registry.npmjs.org/@next/swc-darwin-x64/-/swc-darwin-x64-12.1.5.tgz"
+"@next/swc-darwin-arm64@12.1.5":
+  "integrity" "sha512-y8mhldb/WFZ6lFeowkGfi0cO/lBdiBqDk4T4LZLvCpoQp4Or/NzUN6P5NzBQZ5/b4oUHM/wQICEM+1wKA4qIVw=="
+  "resolved" "https://registry.npmjs.org/@next/swc-darwin-arm64/-/swc-darwin-arm64-12.1.5.tgz"
   "version" "12.1.5"
 
 "@nodelib/fs.scandir@2.1.5":
@@ -2950,7 +2950,7 @@
   dependencies:
     "@octokit/openapi-types" "^11.2.0"
 
-"@pancakeswap/eslint-config-pancake@file:/Users/punsisikiridana/Documents/Projects/QuantumDex/quantum-dex/packages/eslint-config":
+"@pancakeswap/eslint-config-pancake@file:/Users/krishanbandara/Documents/DEFI_Projects/quantumdex/pancake-frontend-develop/packages/eslint-config":
   "resolved" "file:packages/eslint-config"
   "version" "1.2.0"
   dependencies:
@@ -2975,7 +2975,7 @@
     "tiny-warning" "^1.0.3"
     "toformat" "^2.0.0"
 
-"@pancakeswap/uikit@file:/Users/punsisikiridana/Documents/Projects/QuantumDex/quantum-dex/packages/uikit":
+"@pancakeswap/uikit@file:/Users/krishanbandara/Documents/DEFI_Projects/quantumdex/pancake-frontend-develop/packages/uikit":
   "resolved" "file:packages/uikit"
   "version" "0.63.1"
   dependencies:
@@ -12264,7 +12264,7 @@
     "argparse" "^1.0.7"
     "esprima" "^4.0.0"
 
-"jsbi@^3.1.4":
+"jsbi@^3.1.4", "jsbi@^3.2.5":
   "integrity" "sha512-aBE4n43IPvjaddScbvWRA2YlTzKEynHzu7MqOyTipdHucf/VxS63ViCjxYRg86M8Rxwbt/GfzHl1kKERkt45fQ=="
   "resolved" "https://registry.npmjs.org/jsbi/-/jsbi-3.2.5.tgz"
   "version" "3.2.5"
@@ -18484,9 +18484,9 @@
   dependencies:
     "safe-buffer" "^5.0.1"
 
-"turbo-darwin-64@1.1.4":
-  "integrity" "sha512-X10dAxqCMXnDjyN4K5mSvhol42kfAcJhI9NS7neIMD25kLcULYFe96Qk1XWEBxgCEBAmkf7UrysYSP+dQMPlGw=="
-  "resolved" "https://registry.npmjs.org/turbo-darwin-64/-/turbo-darwin-64-1.1.4.tgz"
+"turbo-darwin-arm64@1.1.4":
+  "integrity" "sha512-sl5TiMLNqWKvKpQsh6lg2sUXRTVt5lfRqnStVw/E/5BTm/KIBZTNWHmx0hO8/LwDmXenVtpiW7h7BbWewfPqTQ=="
+  "resolved" "https://registry.npmjs.org/turbo-darwin-arm64/-/turbo-darwin-arm64-1.1.4.tgz"
   "version" "1.1.4"
 
 "turbo@^1.1.4":

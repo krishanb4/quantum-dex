@@ -19,6 +19,8 @@ import { TokenInfo, TokenList, Tags } from '@uniswap/token-lists'
 import { parseUnits } from '@ethersproject/units'
 import { NftToken, State as NftMarketState } from './nftMarket/types'
 
+
+
 /**
  * Token instances created from token info.
  */
@@ -37,6 +39,9 @@ export class WrappedTokenInfo extends Token {
     return this.tokenInfo.logoURI
   }
 }
+
+console.log(ChainId);
+
 
 export type TokenAddressMap = Readonly<{
   [chainId in ChainId]: Readonly<{ [tokenAddress: string]: { token: WrappedTokenInfo; list: TokenList } }>
