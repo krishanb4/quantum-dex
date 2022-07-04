@@ -19,6 +19,8 @@ import useUserAddedTokens, { userAddedTokenSelector } from '../state/user/hooks/
 import { isAddress } from '../utils'
 import { useBytes32TokenContract, useTokenContract } from './useContract'
 
+console.log(`sgfdsgdg :${CHAIN_ID}`)
+
 const mapWithoutUrls = (tokenMap: TokenAddressMap) =>
   Object.keys(tokenMap[CHAIN_ID]).reduce<{ [address: string]: Token }>((newMap, address) => {
     newMap[address] = tokenMap[CHAIN_ID][address].token
