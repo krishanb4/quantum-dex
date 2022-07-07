@@ -73,14 +73,14 @@ const UserMenu = () => {
           {t('Recent Transactions')}
           {hasPendingTransactions && <RefreshIcon spin />}
         </UserMenuItem>
-        <UserMenuDivider />
-        <UserMenuItem
+        {/* <UserMenuDivider /> */}
+        {/* <UserMenuItem
           as="button"
           disabled={isWrongNetwork}
           onClick={() => router.push(`${nftsBaseUrl}/profile/${account.toLowerCase()}`)}
         >
           {t('Your NFTs')}
-        </UserMenuItem>
+        </UserMenuItem> */}
         <ProfileUserMenuItem isLoading={isLoading} hasProfile={hasProfile} disabled={isWrongNetwork} />
         <UserMenuDivider />
         <UserMenuItem as="button" onClick={logout}>
