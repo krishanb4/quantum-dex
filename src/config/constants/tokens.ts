@@ -3,9 +3,8 @@ import { serializeToken } from 'state/user/hooks/helpers'
 import { CHAIN_ID } from './networks'
 import { SerializedToken } from './types'
 
-const { TESTNET } = ChainId
+const { MAINNET, TESTNET } = ChainId
 
-const MAINNET = 180
 
 interface TokenList {
   [symbol: string]: Token
@@ -18,25 +17,17 @@ export const mainnetTokens = defineTokens({
     MAINNET,
     '0xCc9bD40124EfedF6F198B8b5b50697dC635FaaC4',
     18,
-    'WBNB',
-    'Wrapped BNB',
+    'WAME',
+    'Wrapped AME',
     'https://www.binance.com/',
   ),
   // bnb here points to the wbnb contract. Wherever the currency BNB is required, conditional checks for the symbol 'BNB' can be used
-  bnb: new Token(MAINNET, '0xCc9bD40124EfedF6F198B8b5b50697dC635FaaC4', 18, 'BNB', 'BNB', 'https://www.binance.com/'),
+  bnb: new Token(MAINNET, '0xCc9bD40124EfedF6F198B8b5b50697dC635FaaC4', 18, 'AME', 'AME', 'https://amescan.io/'),
   cake: new Token(
     MAINNET,
     '0x1B1Eb7C5bBBB0552fa430fB677393fe320E0e719',
     18,
-    'CAKE',
-    'QuantumDex Token',
-    'https://pancakeswap.finance/',
-  ),
-  syrup: new Token(
-    MAINNET,
-    '0x1B1Eb7C5bBBB0552fa430fB677393fe320E0e719',
-    18,
-    'CAKE',
+    'QTM',
     'QuantumDex Token',
     'https://pancakeswap.finance/',
   ),
@@ -79,9 +70,9 @@ export const mainnetTokens = defineTokens({
   // ),
   busd: new Token(
     MAINNET,
-    '0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56',
+    '0xE84E03AA9544C91075e58c5Eb909D97092fc9B68',
     18,
-    'BUSD',
+    'QUSD',
     'Binance USD',
     'https://www.paxos.com/busd/',
   ),
@@ -221,14 +212,14 @@ export const mainnetTokens = defineTokens({
   //   'Blink Token',
   //   'https://blink.wink.org',
   // ),
-  // syrup: new Token(
-  //   MAINNET,
-  //   '0x009cF7bC57584b7998236eff51b98A168DceA9B0',
-  //   18,
-  //   'SYRUP',
-  //   'SyrupBar Token',
-  //   'https://pancakeswap.finance/',
-  // ),
+  syrup: new Token(
+    MAINNET,
+    '0x2B7c8977087420E0f29069B4DB74bF35E23FAA8a',
+    18,
+    'SYRUP',
+    'SyrupBar Token',
+    'https://pancakeswap.finance/',
+  ),
   // pha: new Token(
   //   MAINNET,
   //   '0x0112e557d400474717056C4e6D40eDD846F38351',

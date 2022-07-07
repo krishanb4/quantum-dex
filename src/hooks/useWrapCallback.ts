@@ -50,13 +50,13 @@ export default function useWrapCallback(
                   const txReceipt = await callWithGasPrice(wbnbContract, 'deposit', undefined, {
                     value: `0x${inputAmount.raw.toString(16)}`,
                   })
-                  addTransaction(txReceipt, { summary: `Wrap ${inputAmount.toSignificant(6)} BNB to WBNB` })
+                  addTransaction(txReceipt, { summary: `Wrap ${inputAmount.toSignificant(6)} AME to WAME` })
                 } catch (error) {
                   console.error('Could not deposit', error)
                 }
               }
             : undefined,
-        inputError: sufficientBalance ? undefined : t('Insufficient BNB balance'),
+        inputError: sufficientBalance ? undefined : t('Insufficient AME balance'),
       }
     }
     if (currencyEquals(WETH[chainId], inputCurrency) && outputCurrency === ETHER) {
@@ -69,13 +69,13 @@ export default function useWrapCallback(
                   const txReceipt = await callWithGasPrice(wbnbContract, 'withdraw', [
                     `0x${inputAmount.raw.toString(16)}`,
                   ])
-                  addTransaction(txReceipt, { summary: `Unwrap ${inputAmount.toSignificant(6)} WBNB to BNB` })
+                  addTransaction(txReceipt, { summary: `Unwrap ${inputAmount.toSignificant(6)} WAME to AME` })
                 } catch (error) {
                   console.error('Could not withdraw', error)
                 }
               }
             : undefined,
-        inputError: sufficientBalance ? undefined : t('Insufficient WBNB balance'),
+        inputError: sufficientBalance ? undefined : t('Insufficient WAME balance'),
       }
     }
     return NOT_APPLICABLE

@@ -71,7 +71,7 @@ const Interval = styled(Text)`
   }
 `
 
-const Label = styled(Flex)<{ dir: 'left' | 'right' }>`
+const Label = styled(Flex) <{ dir: 'left' | 'right' }>`
   background-color: ${({ theme }) => theme.card.background};
   box-shadow: ${({ theme }) => theme.shadows.level1};
   align-items: ${({ dir }) => (dir === 'right' ? 'flex-end' : 'flex-start')};

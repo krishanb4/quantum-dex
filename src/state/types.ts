@@ -38,7 +38,6 @@ export class WrappedTokenInfo extends Token {
   }
 }
 
-console.log(ChainId)
 
 export type TokenAddressMap = Readonly<{
   [chainId in ChainId]: Readonly<{ [tokenAddress: string]: { token: WrappedTokenInfo; list: TokenList } }>

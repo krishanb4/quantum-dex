@@ -159,13 +159,13 @@ export default function Swap() {
 
   const parsedAmounts = showWrap
     ? {
-        [Field.INPUT]: parsedAmount,
-        [Field.OUTPUT]: parsedAmount,
-      }
+      [Field.INPUT]: parsedAmount,
+      [Field.OUTPUT]: parsedAmount,
+    }
     : {
-        [Field.INPUT]: independentField === Field.INPUT ? parsedAmount : trade?.inputAmount,
-        [Field.OUTPUT]: independentField === Field.OUTPUT ? parsedAmount : trade?.outputAmount,
-      }
+      [Field.INPUT]: independentField === Field.INPUT ? parsedAmount : trade?.inputAmount,
+      [Field.OUTPUT]: independentField === Field.OUTPUT ? parsedAmount : trade?.outputAmount,
+    }
 
   const { onSwitchTokens, onCurrencySelection, onUserInput, onChangeRecipient } = useSwapActionHandlers()
   const isValid = !swapInputError
@@ -298,11 +298,11 @@ export default function Swap() {
       setApprovalSubmitted(false) // reset 2 step UI for approvals
       onCurrencySelection(Field.INPUT, currencyInput)
       // const showSwapWarning = shouldShowSwapWarning(currencyInput)
-     /*  if (showSwapWarning) {
-        setSwapWarningCurrency(currencyInput)
-      } else {
-        setSwapWarningCurrency(null)
-      } */
+      /*  if (showSwapWarning) {
+         setSwapWarningCurrency(currencyInput)
+       } else {
+         setSwapWarningCurrency(null)
+       } */
     },
     [onCurrencySelection],
   )
@@ -377,7 +377,7 @@ export default function Swap() {
             outputCurrency={currencies[Field.OUTPUT]}
             isChartExpanded={isChartExpanded}
             setIsChartExpanded={setIsChartExpanded}
-            isChartDisplayed={isChartDisplayed}
+            isChartDisplayed={false}
             currentSwapPrice={singleTokenPrice}
           />
         )}
@@ -390,12 +390,12 @@ export default function Swap() {
               outputCurrency={currencies[Field.OUTPUT]}
               isChartExpanded={isChartExpanded}
               setIsChartExpanded={setIsChartExpanded}
-              isChartDisplayed={isChartDisplayed}
+              isChartDisplayed={false}
               currentSwapPrice={singleTokenPrice}
               isMobile
             />
           }
-          isOpen={isChartDisplayed}
+          isOpen={false}
           setIsOpen={setIsChartDisplayed}
         />
         <Flex flexDirection="column">
@@ -565,8 +565,8 @@ export default function Swap() {
                           {priceImpactSeverity > 3 && !isExpertMode
                             ? t('Price Impact High')
                             : priceImpactSeverity > 2
-                            ? t('Swap Anyway')
-                            : t('Swap')}
+                              ? t('Swap Anyway')
+                              : t('Swap')}
                         </Button>
                       </RowBetween>
                     ) : (
@@ -593,8 +593,8 @@ export default function Swap() {
                           (priceImpactSeverity > 3 && !isExpertMode
                             ? t('Price Impact Too High')
                             : priceImpactSeverity > 2
-                            ? t('Swap Anyway')
-                            : t('Swap'))}
+                              ? t('Swap Anyway')
+                              : t('Swap'))}
                       </Button>
                     )}
                     {showApproveFlow && (

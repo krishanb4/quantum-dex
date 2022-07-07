@@ -46,7 +46,7 @@ const Footer: React.FC<{ variant?: FooterVariant; helpUrl?: string }> = ({
   const isSide = variant === 'side'
   return (
     <Wrapper $isSide={isSide}>
-      <Flex flexDirection={isSide ? 'column' : ['column', 'column', 'row']} alignItems="center">
+      {/* <Flex flexDirection={isSide ? 'column' : ['column', 'column', 'row']} alignItems="center">
         <ButtonMenu variant="subtle" scale="sm" activeIndex={0}>
           <ButtonMenuItem>V2</ButtonMenuItem>
           <ButtonMenuItem as="a" href="https://v1exchange.pancakeswap.finance/#/">
@@ -62,7 +62,7 @@ const Footer: React.FC<{ variant?: FooterVariant; helpUrl?: string }> = ({
         >
           {t('Convert ERC-20 to BEP-20')}
         </LinkExternal>
-      </Flex>
+      </Flex> */}
       {isSide && <Flex flexGrow={1} />}
       <Flex
         flexGrow={isSide ? 0 : 1}

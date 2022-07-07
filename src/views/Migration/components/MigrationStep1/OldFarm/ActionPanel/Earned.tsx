@@ -47,7 +47,7 @@ const Earned: React.FC<EarnedProps> = ({ earnings }) => {
     <Container>
       <ActionTitles>
         <Text bold textTransform="uppercase" color="secondary" fontSize="12px" pr="4px">
-          {`CAKE ${t('Earned')}`}
+          {`QTM ${t('Earned')}`}
         </Text>
       </ActionTitles>
       <ActionContent>

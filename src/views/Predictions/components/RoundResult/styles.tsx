@@ -34,7 +34,7 @@ export const PrizePoolRow: React.FC<PrizePoolRowProps> = ({ totalAmount, ...prop
   return (
     <Row {...props}>
       <Text bold>{t('Prize Pool')}:</Text>
-      <Text bold>{`${getPrizePoolAmount(totalAmount)} BNB`}</Text>
+      <Text bold>{`${getPrizePoolAmount(totalAmount)} AME`}</Text>
     </Row>
   )
 }
@@ -60,7 +60,7 @@ export const PayoutRow: React.FC<PayoutRowProps> = ({ positionLabel, multiplier,
           {t('%multiplier% Payout', { multiplier: formattedMultiplier })}
         </Text>
         <Text mx="4px">|</Text>
-        <Text fontSize="12px" lineHeight="18px">{`${formatBnb(amount)} BNB`}</Text>
+        <Text fontSize="12px" lineHeight="18px">{`${formatBnb(amount)} AME`}</Text>
       </Flex>
     </Row>
   )
@@ -116,7 +116,7 @@ const getBackgroundColor = ({
   }
 }
 
-const Background = styled(Box)<RoundResultBoxProps>`
+const Background = styled(Box) <RoundResultBoxProps>`
   background: ${getBackgroundColor};
   border-radius: 16px;
   padding: 2px;
@@ -200,7 +200,7 @@ export const PrizePoolHistoryRow: React.FC<PrizePoolHistoryRowProps> = ({ totalA
   return (
     <Row {...props}>
       <Text bold>{t('Prize Pool')}:</Text>
-      <Text bold>{`${getPrizePoolAmountHistory(totalAmount)} BNB`}</Text>
+      <Text bold>{`${getPrizePoolAmountHistory(totalAmount)} AME`}</Text>
     </Row>
   )
 }

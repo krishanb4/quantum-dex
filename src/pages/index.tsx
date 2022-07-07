@@ -1,4 +1,4 @@
-//  import { FACTORY_ADDRESS } from '@pancakeswap/sdk'
+import { FACTORY_ADDRESS } from '@pancakeswap/sdk'
 import { getUnixTime, sub } from 'date-fns'
 import { gql } from 'graphql-request'
 import { GetStaticProps } from 'next'
@@ -9,9 +9,6 @@ import { getCakeVaultAddress } from 'utils/addressHelpers'
 import { getCakeContract } from 'utils/contractHelpers'
 import { formatEther } from '@ethersproject/units'
 import Home from '../views/Home'
-
-const FACTORY_ADDRESS = '0xbEb28bd849Abc4C880A94F8A2e7a511EB2b9daca'
-console.log(FACTORY_ADDRESS)
 
 const IndexPage = ({ totalTx30Days, addressCount30Days, tvl }) => {
   return (

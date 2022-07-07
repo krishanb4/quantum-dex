@@ -45,46 +45,46 @@ const PreviousBetsTable: React.FC<PreviousBetsTableProps> = ({ numberOfBets = 5,
         <tr>
           <Th>{t('Round')}</Th>
           <Th>{t('Direction')}</Th>
-          <Th textAlign="right">{t('Winnings (BNB)')}</Th>
+          <Th textAlign="right">{t('Winnings (AME))')}</Th>
         </tr>
       </thead>
       <tbody>
         {isFetching
           ? times(numberOfBets).map((num) => (
-              <tr key={num}>
-                <Td>
-                  <Skeleton width="80px" />
+            <tr key={num}>
+              <Td>
+                <Skeleton width="80px" />
+              </Td>
+              <Td>
+                <Skeleton width="60px" height="32px" />
+              </Td>
+              <Td>
+                <Skeleton width="80px" />
+              </Td>
+            </tr>
+          ))
+          : orderedBets.map((bet) => {
+            const isCancelled = bet.round.failed
+            const isWinner = bet.position === bet.round.position
+
+            return (
+              <tr key={bet.id}>
+                <Td textAlign="center" fontWeight="bold">
+                  {bet.round.epoch.toLocaleString()}
                 </Td>
-                <Td>
-                  <Skeleton width="60px" height="32px" />
+                <Td textAlign="center">
+                  <PositionLabel position={bet.position} />
                 </Td>
-                <Td>
-                  <Skeleton width="80px" />
+                <Td textAlign="right">
+                  <NetWinnings
+                    amount={!isCancelled && isWinner ? bet.claimedNetBNB : bet.amount}
+                    textPrefix={isCancelled ? '' : isWinner ? '+' : '-'}
+                    textColor={isCancelled ? 'textSubtle' : isWinner ? 'success' : 'failure'}
+                  />
                 </Td>
               </tr>
-            ))
-          : orderedBets.map((bet) => {
-              const isCancelled = bet.round.failed
-              const isWinner = bet.position === bet.round.position
-
-              return (
-                <tr key={bet.id}>
-                  <Td textAlign="center" fontWeight="bold">
-                    {bet.round.epoch.toLocaleString()}
-                  </Td>
-                  <Td textAlign="center">
-                    <PositionLabel position={bet.position} />
-                  </Td>
-                  <Td textAlign="right">
-                    <NetWinnings
-                      amount={!isCancelled && isWinner ? bet.claimedNetBNB : bet.amount}
-                      textPrefix={isCancelled ? '' : isWinner ? '+' : '-'}
-                      textColor={isCancelled ? 'textSubtle' : isWinner ? 'success' : 'failure'}
-                    />
-                  </Td>
-                </tr>
-              )
-            })}
+            )
+          })}
       </tbody>
     </Table>
   )

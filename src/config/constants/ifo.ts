@@ -3,7 +3,7 @@ import tokens from './tokens'
 import farms from './farms'
 import { Ifo } from './types'
 
-console.log(`chain id from package ${ChainId.MAINNET}`)
+
 
 export const cakeBnbLpToken = new Token(180, farms[1].lpAddresses[180], 18, farms[1].lpSymbol)
 

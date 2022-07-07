@@ -41,7 +41,7 @@ const Menu = (props) => {
       isDark={isDark}
       toggleTheme={toggleTheme}
       currentLang={currentLanguage.code}
-      langs={languageList}
+      // langs={languageList}
       setLang={setLanguage}
       cakePriceUsd={cakePriceUsd.toNumber()}
       links={menuItems}

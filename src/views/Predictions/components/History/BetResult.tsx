@@ -133,7 +133,7 @@ const BetResult: React.FC<BetResultProps> = ({ bet, result }) => {
         {bet.claimed && bet.claimedHash && (
           <Flex justifyContent="center">
             <LinkExternal href={getBscScanLink(bet.claimedHash, 'transaction')} mb="16px">
-              {t('View on BscScan')}
+              {t('View on AMEScan')}
             </LinkExternal>
           </Flex>
         )}
@@ -148,12 +148,12 @@ const BetResult: React.FC<BetResultProps> = ({ bet, result }) => {
         </Flex>
         <Flex alignItems="center" justifyContent="space-between" mb="16px">
           <Text>{t('Your position')}</Text>
-          <Text>{`${formatBnb(bet.amount)} BNB`}</Text>
+          <Text>{`${formatBnb(bet.amount)} AME`}</Text>
         </Flex>
         <Flex alignItems="start" justifyContent="space-between">
           <Text bold>{isWinner ? t('Your winnings') : t('Your Result')}:</Text>
           <Box style={{ textAlign: 'right' }}>
-            <Text bold color={getResultColor()}>{`${isWinner ? '+' : '-'}${formatBnb(payout)} BNB`}</Text>
+            <Text bold color={getResultColor()}>{`${isWinner ? '+' : '-'}${formatBnb(payout)} AME`}</Text>
             <Text fontSize="12px" color="textSubtle">
               {`~$${totalPayout.toFixed(2)}`}
             </Text>
@@ -167,7 +167,7 @@ const BetResult: React.FC<BetResultProps> = ({ bet, result }) => {
                 {t('Amount to collect')}:
               </Text>
               <Flex justifyContent="end">
-                <Text fontSize="14px" color="textSubtle">{`${formatBnb(returned)} BNB`}</Text>
+                <Text fontSize="14px" color="textSubtle">{`${formatBnb(returned)} AME`}</Text>
                 <span ref={targetRef}>
                   <InfoIcon color="textSubtle" ml="4px" />
                 </span>

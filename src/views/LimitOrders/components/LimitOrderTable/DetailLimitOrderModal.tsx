@@ -54,15 +54,15 @@ export const DetailLimitOrderModal: React.FC<DetailLimitOrderModalProps> = ({ on
 
     const orderDetails =
       formattedOrder.inputToken?.symbol &&
-      formattedOrder.outputToken?.symbol &&
-      formattedOrder.inputAmount &&
-      formattedOrder.outputAmount
+        formattedOrder.outputToken?.symbol &&
+        formattedOrder.inputAmount &&
+        formattedOrder.outputAmount
         ? {
-            inputTokenSymbol: formattedOrder.inputToken.symbol,
-            outputTokenSymbol: formattedOrder.outputToken.symbol,
-            inputAmount: formattedOrder.inputAmount,
-            outputAmount: formattedOrder.outputAmount,
-          }
+          inputTokenSymbol: formattedOrder.inputToken.symbol,
+          outputTokenSymbol: formattedOrder.outputToken.symbol,
+          inputAmount: formattedOrder.inputAmount,
+          outputAmount: formattedOrder.outputAmount,
+        }
         : undefined
     handleLimitOrderCancellation(order, orderDetails)
       .then(({ hash }) => {
@@ -122,7 +122,7 @@ export const DetailLimitOrderModal: React.FC<DetailLimitOrderModalProps> = ({ on
         {isOpen ? (
           <>
             <Button variant="primary" mt="16px" as="a" external href={formattedOrder.bscScanUrls.created}>
-              {t('View on BSCScan')}
+              {t('View on AMEScan')}
             </Button>
             {!isSubmissionPending && (
               <Button variant="danger" mt="16px" onClick={onCancelOrder}>
@@ -132,17 +132,17 @@ export const DetailLimitOrderModal: React.FC<DetailLimitOrderModalProps> = ({ on
           </>
         ) : (
           <Button variant="primary" mt="16px" as="a" external href={formattedOrder.bscScanUrls.created}>
-            {t('View order creation on BSCScan')}
+            {t('View order creation on AMEScan')}
           </Button>
         )}
         {isCancelled && bscScanUrls.cancelled && (
           <Button variant="primary" mt="16px" as="a" external href={bscScanUrls.cancelled}>
-            {t('View order cancellation on BSCScan')}
+            {t('View order cancellation on AMEScan')}
           </Button>
         )}
         {isExecuted && bscScanUrls.executed && (
           <Button variant="primary" mt="16px" as="a" external href={bscScanUrls.executed}>
-            {t('View order execution on BSCScan')}
+            {t('View order execution on AMEScan')}
           </Button>
         )}
       </Flex>

@@ -52,7 +52,7 @@ const pools: SerializedPoolConfig[] = [
     earningToken: serializedTokens.cake,
     contractAddress: {
       97: '',
-      180: '0xa5f8C5Dbd5F286960b9d90548680aE5ebFf07652',
+      180: '0xDC284d444A5Ec2B594267F29FFB8eB7Fde76B8fD',
       // 56: '0xa5f8C5Dbd5F286960b9d90548680aE5ebFf07652',
     },
     poolCategory: PoolCategory.CORE,
@@ -3727,6 +3727,5 @@ const pools: SerializedPoolConfig[] = [
   // },
 ].filter((p) => !!p.contractAddress[CHAIN_ID])
 
-console.log(CHAIN_ID)
 
 export default pools

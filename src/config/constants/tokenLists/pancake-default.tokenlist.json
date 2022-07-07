@@ -13,12 +13,12 @@
         "default"
     ],
     "tokens": [{
-            "name": "WBNB Token",
-            "symbol": "WBNB",
-            "address": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
-            "chainId": 56,
+            "name": "WAME Token",
+            "symbol": "WAME",
+            "address": "0xCc9bD40124EfedF6F198B8b5b50697dC635FaaC4",
+            "chainId": 180,
             "decimals": 18,
-            "logoURI": "https://pancakeswap.finance/images/tokens/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c.png"
+            "logoURI": "https://quantumdex.finance/images/tokens/0xCc9bD40124EfedF6F198B8b5b50697dC635FaaC4.png"
         },
         {
             "name": "BUSD Token",
