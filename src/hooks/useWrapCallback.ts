@@ -9,7 +9,6 @@ import { useWBNBContract } from './useContract'
 import { useCallWithGasPrice } from './useCallWithGasPrice'
 import tokens from '../config/constants/tokens'
 
-console.log(`fron lib:`);
 
 const wethfrom = tokens.wbnb;
 
