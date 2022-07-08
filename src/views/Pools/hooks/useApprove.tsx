@@ -67,7 +67,7 @@ export const useVaultApprove = (setLastUpdated: () => void) => {
       toastSuccess(
         t('Contract Enabled'),
         <ToastDescriptionWithTx txHash={receipt.transactionHash}>
-          {t('You can now stake in the %symbol% vault!', { symbol: 'CAKE' })}
+          {t('You can now stake in the %symbol% vault!', { symbol: 'QTS' })}
         </ToastDescriptionWithTx>,
       )
       setLastUpdated()
@@ -86,10 +86,10 @@ export const useCheckVaultApprovalStatus = () => {
     () =>
       account
         ? {
-            contract: cakeContract,
-            methodName: 'allowance',
-            params: [account, vaultPoolContract.address],
-          }
+          contract: cakeContract,
+          methodName: 'allowance',
+          params: [account, vaultPoolContract.address],
+        }
         : null,
     [account, cakeContract, vaultPoolContract.address],
   )

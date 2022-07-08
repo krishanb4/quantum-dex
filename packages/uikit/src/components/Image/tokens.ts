@@ -3,7 +3,7 @@
  */
 const tokens = {
   cake: {
-    symbol: "QTM",
+    symbol: "QTS",
     address: {
       180: '0x1B1Eb7C5bBBB0552fa430fB677393fe320E0e719',
      // 56: "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",

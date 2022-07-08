@@ -65,7 +65,7 @@ const ScrollableContainer = styled.div`
   }
 `
 
-const FullWidthButtonMenu = styled(ButtonMenu)<{ disabled?: boolean }>`
+const FullWidthButtonMenu = styled(ButtonMenu) <{ disabled?: boolean }>`
   width: 100%;
 
   & > button {
@@ -89,7 +89,7 @@ const RoiCalculatorModal: React.FC<RoiCalculatorModalProps> = ({
   stakingTokenPrice,
   multiplier,
   initialValue,
-  earningTokenSymbol = 'CAKE',
+  earningTokenSymbol = 'QTS',
   autoCompoundFrequency = 0,
   performanceFee = 0,
   isFarm = false,
@@ -136,9 +136,9 @@ const RoiCalculatorModal: React.FC<RoiCalculatorModalProps> = ({
     isFarm
       ? t('“My Balance” here includes both LP Tokens in your wallet, and LP Tokens already staked in this farm.')
       : t(
-          '“My Balance” here includes both %assetSymbol% in your wallet, and %assetSymbol% already staked in this pool.',
-          { assetSymbol: stakingTokenSymbol },
-        ),
+        '“My Balance” here includes both %assetSymbol% in your wallet, and %assetSymbol% already staked in this pool.',
+        { assetSymbol: stakingTokenSymbol },
+      ),
     { placement: 'top-end', tooltipOffset: [20, 10] },
   )
 
