@@ -19,7 +19,7 @@ export const mainnetTokens = defineTokens({
     18,
     'WAME',
     'Wrapped AME',
-    'https://www.binance.com/',
+    'https://quantumdex.finance/',
   ),
   // bnb here points to the wbnb contract. Wherever the currency BNB is required, conditional checks for the symbol 'BNB' can be used
   bnb: new Token(MAINNET, '0xCc9bD40124EfedF6F198B8b5b50697dC635FaaC4', 18, 'AME', 'AME', 'https://amescan.io/'),
@@ -73,7 +73,7 @@ export const mainnetTokens = defineTokens({
     '0xE84E03AA9544C91075e58c5Eb909D97092fc9B68',
     18,
     'QUSD',
-    'Binance USD',
+    'QuantumDex USD',
     'https://www.paxos.com/busd/',
   ),
   // dai: new Token(

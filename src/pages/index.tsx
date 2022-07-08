@@ -10,6 +10,7 @@ import { getCakeContract } from 'utils/contractHelpers'
 import { formatEther } from '@ethersproject/units'
 import Home from '../views/Home'
 
+
 const IndexPage = ({ totalTx30Days, addressCount30Days, tvl }) => {
   return (
     <SWRConfig

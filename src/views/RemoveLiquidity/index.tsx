@@ -40,6 +40,9 @@ import { useGasPrice, useUserSlippageTolerance } from '../../state/user/hooks'
 import Page from '../Page'
 import ConfirmLiquidityModal from '../Swap/components/ConfirmRemoveLiquidityModal'
 import { logError } from '../../utils/sentry'
+import tokens from '../../config/constants/tokens'
+const wethfrom = tokens.wbnb;
+
 
 const BorderCard = styled.div`
   border: solid 1px ${({ theme }) => theme.colors.cardBorder};
@@ -354,8 +357,8 @@ export default function RemoveLiquidity() {
   const oneCurrencyIsBNB = currencyA === ETHER || currencyB === ETHER
   const oneCurrencyIsWBNB = Boolean(
     chainId &&
-    ((currencyA && currencyEquals(WETH[chainId], currencyA)) ||
-      (currencyB && currencyEquals(WETH[chainId], currencyB))),
+    ((currencyA && currencyEquals(wethfrom, currencyA)) ||
+      (currencyB && currencyEquals(wethfrom, currencyB))),
   )
 
   const handleSelectCurrencyA = useCallback(
@@ -501,15 +504,15 @@ export default function RemoveLiquidity() {
                     <RowBetween style={{ justifyContent: 'flex-end', fontSize: '14px' }}>
                       {oneCurrencyIsBNB ? (
                         <StyledInternalLink
-                          href={`/remove/${currencyA === ETHER ? WETH[chainId].address : currencyIdA}/${currencyB === ETHER ? WETH[chainId].address : currencyIdB
+                          href={`/remove/${currencyA === ETHER ? wethfrom.address : currencyIdA}/${currencyB === ETHER ? wethfrom.address : currencyIdB
                             }`}
                         >
                           {t('Receive WAME')}
                         </StyledInternalLink>
                       ) : oneCurrencyIsWBNB ? (
                         <StyledInternalLink
-                          href={`/remove/${currencyA && currencyEquals(currencyA, WETH[chainId]) ? 'AME' : currencyIdA
-                            }/${currencyB && currencyEquals(currencyB, WETH[chainId]) ? 'AME' : currencyIdB}`}
+                          href={`/remove/${currencyA && currencyEquals(currencyA, wethfrom) ? 'AME' : currencyIdA
+                            }/${currencyB && currencyEquals(currencyB, wethfrom) ? 'AME' : currencyIdB}`}
                         >
                           {t('Receive AME')}
                         </StyledInternalLink>

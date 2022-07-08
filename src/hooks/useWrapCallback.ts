@@ -7,6 +7,12 @@ import { useTransactionAdder } from '../state/transactions/hooks'
 import { useCurrencyBalance } from '../state/wallet/hooks'
 import { useWBNBContract } from './useContract'
 import { useCallWithGasPrice } from './useCallWithGasPrice'
+import tokens from '../config/constants/tokens'
+
+console.log(`fron lib:`);
+
+const wethfrom = tokens.wbnb;
+
 
 export enum WrapType {
   NOT_APPLICABLE,
@@ -30,7 +36,8 @@ export default function useWrapCallback(
   const { chainId, account } = useActiveWeb3React()
   const { callWithGasPrice } = useCallWithGasPrice()
   const wbnbContract = useWBNBContract()
-  console.log(wbnbContract);
+ // console.log(wbnbContract);
+  
   
   const balance = useCurrencyBalance(account ?? undefined, inputCurrency)
   // we can always parse the amount typed as the input currency, since wrapping is 1:1
@@ -42,7 +49,7 @@ export default function useWrapCallback(
 
     const sufficientBalance = inputAmount && balance && !balance.lessThan(inputAmount)
 
-    if (inputCurrency === ETHER && currencyEquals(WETH[chainId], outputCurrency)) {
+    if (inputCurrency === ETHER && currencyEquals(wethfrom, outputCurrency)) {
       return {
         wrapType: WrapType.WRAP,
         execute:
@@ -61,7 +68,7 @@ export default function useWrapCallback(
         inputError: sufficientBalance ? undefined : t('Insufficient AME balance'),
       }
     }
-    if (currencyEquals(WETH[chainId], inputCurrency) && outputCurrency === ETHER) {
+    if (currencyEquals(wethfrom, inputCurrency) && outputCurrency === ETHER) {
       return {
         wrapType: WrapType.UNWRAP,
         execute:
