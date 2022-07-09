@@ -24,7 +24,7 @@ const initialData = {
     earningToken: serializedTokens.cake,
     contractAddress: {
       97: '0x1d32c2945C8FDCBc7156c553B7cEa4325a17f4f9',
-      180: '',
+      180: '0x040053e31930DF94E5e7ef234dc6FbD0f8711030',
       // 56: '0x73feaa1eE314F8c655E354234017bE2193C9E24E',
     },
     poolCategory: PoolCategory.CORE,
