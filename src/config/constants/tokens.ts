@@ -5,7 +5,6 @@ import { SerializedToken } from './types'
 
 const { MAINNET, TESTNET } = ChainId
 
-
 interface TokenList {
   [symbol: string]: Token
 }
@@ -25,9 +24,9 @@ export const mainnetTokens = defineTokens({
   bnb: new Token(MAINNET, '0xCc9bD40124EfedF6F198B8b5b50697dC635FaaC4', 18, 'AME', 'AME', 'https://amescan.io/'),
   cake: new Token(
     MAINNET,
-    '0x1B1Eb7C5bBBB0552fa430fB677393fe320E0e719',
+    '0x15921c21652afea747f0742e8e37f8b589c27f67',
     18,
-    'QTS',
+    'QTM',
     'QuantumDex Token',
     'https://quantumdex.finance/',
   ),
@@ -214,7 +213,7 @@ export const mainnetTokens = defineTokens({
   // ),
   syrup: new Token(
     MAINNET,
-    '0x2B7c8977087420E0f29069B4DB74bF35E23FAA8a',
+    '0x85d2631d6ae7429b9071c95c309a8a248a2f9a5e',
     18,
     'SYRUP',
     'SyrupBar Token',
