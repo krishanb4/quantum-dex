@@ -44,10 +44,10 @@ function useChainlinkRoundDataSet() {
   const calls = useMemo(() => {
     return lastRound.data
       ? Array.from({ length: 50 }).map((_, i) => ({
-          address: chainlinkAddress,
-          name: 'getRoundData',
-          params: [lastRound.data.sub(i)],
-        }))
+        address: chainlinkAddress,
+        name: 'getRoundData',
+        params: [lastRound.data.sub(i)],
+      }))
       : null
   }, [lastRound.data])
 
@@ -111,7 +111,7 @@ function useChartHoverMutate() {
 
 const chartColor = { gradient1: '#00E7B0', gradient2: '#0C8B6C', stroke: '#31D0AA' }
 
-const ChainlinkChartWrapper = styled(Flex)<{ isMobile?: boolean }>`
+const ChainlinkChartWrapper = styled(Flex) <{ isMobile?: boolean }>`
   flex-direction: column;
   width: 100%;
   height: 100%;
@@ -130,7 +130,7 @@ const HoverData = ({ rounds }: { rounds: { [key: string]: NodeRound } }) => {
     <PairPriceDisplay
       width="100%"
       value={hoverData ? hoverData.answer : formatBigNumberToFixed(answerAsBigNumber, 3, 8)}
-      inputSymbol="BNB"
+      inputSymbol="AME"
       outputSymbol="USD"
       format={false}
       flexWrap="wrap"

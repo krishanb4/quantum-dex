@@ -32,8 +32,8 @@ const Filters = () => {
   const { t } = useTranslation()
   const dispatch = useAppDispatch()
   const orderByOptions = [
-    { label: t('Net Winnings'), value: 'netBNB' },
-    { label: t('Total BNB'), value: 'totalBNB' },
+    { label: t('Net Winnings'), value: 'netAME' },
+    { label: t('Total AME'), value: 'totalAME' },
     { label: t('Rounds Played'), value: 'totalBets' },
     { label: t('Win Rate'), value: 'winRate' },
   ]

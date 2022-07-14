@@ -42,7 +42,7 @@ const AuctionCakeBurn: React.FC = () => {
     <Flex flexDirection={['column-reverse', null, 'row']}>
       <Flex flexDirection="column" flex="2">
         {burnedCakeAmount !== 0 ? (
-          <Balance fontSize="64px" bold value={burnedCakeAmount} decimals={0} unit=" CAKE" />
+          <Balance fontSize="64px" bold value={burnedCakeAmount} decimals={0} unit=" QTS" />
         ) : (
           <Skeleton width="256px" height="64px" />
         )}

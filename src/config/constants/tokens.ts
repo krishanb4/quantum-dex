@@ -3,9 +3,7 @@ import { serializeToken } from 'state/user/hooks/helpers'
 import { CHAIN_ID } from './networks'
 import { SerializedToken } from './types'
 
-const { TESTNET } = ChainId
-
-const MAINNET = 180
+const { MAINNET, TESTNET } = ChainId
 
 interface TokenList {
   [symbol: string]: Token
@@ -18,19 +16,19 @@ export const mainnetTokens = defineTokens({
     MAINNET,
     '0xCc9bD40124EfedF6F198B8b5b50697dC635FaaC4',
     18,
-    'WBNB',
-    'Wrapped BNB',
-    'https://www.binance.com/',
+    'WAME',
+    'Wrapped AME',
+    'https://quantumdex.finance/',
   ),
   // bnb here points to the wbnb contract. Wherever the currency BNB is required, conditional checks for the symbol 'BNB' can be used
-  bnb: new Token(MAINNET, '0xCc9bD40124EfedF6F198B8b5b50697dC635FaaC4', 18, 'BNB', 'BNB', 'https://www.binance.com/'),
+  bnb: new Token(MAINNET, '0xCc9bD40124EfedF6F198B8b5b50697dC635FaaC4', 18, 'AME', 'AME', 'https://amescan.io/'),
   cake: new Token(
     MAINNET,
-    '0x1B1Eb7C5bBBB0552fa430fB677393fe320E0e719',
+    '0x15921c21652afea747f0742e8e37f8b589c27f67',
     18,
-    'CAKE',
+    'QTS',
     'QuantumDex Token',
-    'https://pancakeswap.finance/',
+    'https://quantumdex.finance/',
   ),
   // gmi: new Token(MAINNET, '0x93D8d25E3C9A847a5Da79F79ecaC89461FEcA846', 18, 'GMI', 'Gamifi', 'https://gamifi.gg/'),
   // tlos: new Token(MAINNET, '0xb6C53431608E626AC81a9776ac3e999c5556717c', 18, 'TLOS', 'Telos', 'https://www.telos.net/'),
@@ -71,10 +69,10 @@ export const mainnetTokens = defineTokens({
   // ),
   busd: new Token(
     MAINNET,
-    '0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56',
+    '0xE84E03AA9544C91075e58c5Eb909D97092fc9B68',
     18,
-    'BUSD',
-    'Binance USD',
+    'QUSD',
+    'QuantumDex USD',
     'https://www.paxos.com/busd/',
   ),
   // dai: new Token(
@@ -213,14 +211,14 @@ export const mainnetTokens = defineTokens({
   //   'Blink Token',
   //   'https://blink.wink.org',
   // ),
-  // syrup: new Token(
-  //   MAINNET,
-  //   '0x009cF7bC57584b7998236eff51b98A168DceA9B0',
-  //   18,
-  //   'SYRUP',
-  //   'SyrupBar Token',
-  //   'https://pancakeswap.finance/',
-  // ),
+  syrup: new Token(
+    MAINNET,
+    '0x85d2631d6ae7429b9071c95c309a8a248a2f9a5e', 
+    18,
+    'SYRUP',
+    'SyrupBar Token',
+    'https://pancakeswap.finance/',
+  ),
   // pha: new Token(
   //   MAINNET,
   //   '0x0112e557d400474717056C4e6D40eDD846F38351',

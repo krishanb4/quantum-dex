@@ -19,7 +19,7 @@ export const footerLinks: FooterLinkType[] = [
         href: "https://docs.pancakeswap.finance/contact-us/telegram",
       },
       {
-        label: "CAKE",
+        label: "QTS",
         href: "https://docs.pancakeswap.finance/tokenomics/cake",
       },
       {
@@ -90,62 +90,62 @@ export const socials = [
         label: "English",
         href: "https://t.me/pancakeswap",
       },
-      {
-        label: "Bahasa Indonesia",
-        href: "https://t.me/QuantumDexIndonesia",
-      },
-      {
-        label: "中文",
-        href: "https://t.me/QuantumDex_CN",
-      },
-      {
-        label: "Tiếng Việt",
-        href: "https://t.me/QuantumDexVN",
-      },
-      {
-        label: "Italiano",
-        href: "https://t.me/pancakeswap_ita",
-      },
-      {
-        label: "русский",
-        href: "https://t.me/pancakeswap_ru",
-      },
-      {
-        label: "Türkiye",
-        href: "https://t.me/pancakeswapturkiye",
-      },
-      {
-        label: "Português",
-        href: "https://t.me/QuantumDexPortuguese",
-      },
-      {
-        label: "Español",
-        href: "https://t.me/PancakeswapEs",
-      },
-      {
-        label: "日本語",
-        href: "https://t.me/pancakeswapjp",
-      },
-      {
-        label: "Français",
-        href: "https://t.me/pancakeswapfr",
-      },
-      {
-        label: "Deutsch",
-        href: "https://t.me/QuantumDex_DE",
-      },
-      {
-        label: "Filipino",
-        href: "https://t.me/Pancakeswap_Ph",
-      },
-      {
-        label: "ქართული ენა",
-        href: "https://t.me/QuantumDexGeorgia",
-      },
-      {
-        label: "Announcements",
-        href: "https://t.me/QuantumDexAnn",
-      },
+      // {
+      //   label: "Bahasa Indonesia",
+      //   href: "https://t.me/QuantumDexIndonesia",
+      // },
+      // {
+      //   label: "中文",
+      //   href: "https://t.me/QuantumDex_CN",
+      // },
+      // {
+      //   label: "Tiếng Việt",
+      //   href: "https://t.me/QuantumDexVN",
+      // },
+      // {
+      //   label: "Italiano",
+      //   href: "https://t.me/pancakeswap_ita",
+      // },
+      // {
+      //   label: "русский",
+      //   href: "https://t.me/pancakeswap_ru",
+      // },
+      // {
+      //   label: "Türkiye",
+      //   href: "https://t.me/pancakeswapturkiye",
+      // },
+      // {
+      //   label: "Português",
+      //   href: "https://t.me/QuantumDexPortuguese",
+      // },
+      // {
+      //   label: "Español",
+      //   href: "https://t.me/PancakeswapEs",
+      // },
+      // {
+      //   label: "日本語",
+      //   href: "https://t.me/pancakeswapjp",
+      // },
+      // {
+      //   label: "Français",
+      //   href: "https://t.me/pancakeswapfr",
+      // },
+      // {
+      //   label: "Deutsch",
+      //   href: "https://t.me/QuantumDex_DE",
+      // },
+      // {
+      //   label: "Filipino",
+      //   href: "https://t.me/Pancakeswap_Ph",
+      // },
+      // {
+      //   label: "ქართული ენა",
+      //   href: "https://t.me/QuantumDexGeorgia",
+      // },
+      // {
+      //   label: "Announcements",
+      //   href: "https://t.me/QuantumDexAnn",
+      // },
     ],
   },
   {

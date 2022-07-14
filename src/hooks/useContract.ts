@@ -49,6 +49,9 @@ import { getContract, getProviderOrSigner } from '../utils'
 
 import { IPancakePair } from '../config/abi/types/IPancakePair'
 
+
+
+
 /**
  * Helper hooks to get specific contracts (by ABI)
  */
@@ -121,10 +124,10 @@ export const useMasterchef = (withSignerIfPossible = true) => {
   )
 }
 
-// export const useMasterchefV1 = () => {
-//   const { library } = useActiveWeb3React()
-//   return useMemo(() => getMasterchefV1Contract(library.getSigner()), [library])
-// }
+export const useMasterchefV1 = () => {
+  const { library } = useActiveWeb3React()
+  return useMemo(() => getMasterchefV1Contract(library.getSigner()), [library])
+}
 
 export const useSousChef = (id) => {
   const { library } = useActiveWeb3React()
@@ -286,7 +289,7 @@ export function useTokenContract(tokenAddress?: string, withSignerIfPossible?: b
 
 export function useWBNBContract(withSignerIfPossible?: boolean): Contract | null {
   const { chainId } = useActiveWeb3React()
-  return useContract<Weth>(chainId ? WETH[chainId].address : undefined, WETH_ABI, withSignerIfPossible)
+  return useContract<Weth>(chainId ? "0xCc9bD40124EfedF6F198B8b5b50697dC635FaaC4" : undefined, WETH_ABI, withSignerIfPossible)
 }
 
 export function useBytes32TokenContract(tokenAddress?: string, withSignerIfPossible?: boolean): Contract | null {

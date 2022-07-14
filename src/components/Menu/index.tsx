@@ -41,7 +41,7 @@ const Menu = (props) => {
       isDark={isDark}
       toggleTheme={toggleTheme}
       currentLang={currentLanguage.code}
-      langs={languageList}
+      // langs={languageList}
       setLang={setLanguage}
       cakePriceUsd={cakePriceUsd.toNumber()}
       links={menuItems}
@@ -49,7 +49,7 @@ const Menu = (props) => {
       footerLinks={footerLinks(t)}
       activeItem={activeMenuItem?.href}
       activeSubItem={activeSubMenuItem?.href}
-      buyCakeLabel={t('Buy CAKE')}
+      buyCakeLabel={t('Buy QTS')}
       {...props}
     />
   )

@@ -14,7 +14,7 @@ export const DURATION_FACTOR = BigNumber.from('31536000')
 
 export const vaultPoolConfig = {
   [VaultKey.CakeVaultV1]: {
-    name: <Trans>Auto CAKE</Trans>,
+    name: <Trans>Auto QTS</Trans>,
     description: <Trans>Automatic restaking</Trans>,
     autoCompoundFrequency: 5000,
     gasLimit: 380000,
@@ -24,7 +24,7 @@ export const vaultPoolConfig = {
     },
   },
   [VaultKey.CakeVault]: {
-    name: <Trans>Stake CAKE</Trans>,
+    name: <Trans>Stake QTS</Trans>,
     description: <Trans>Stake, Earn – And more!</Trans>,
     autoCompoundFrequency: 5000,
     gasLimit: 500000,
@@ -52,7 +52,7 @@ const pools: SerializedPoolConfig[] = [
     earningToken: serializedTokens.cake,
     contractAddress: {
       97: '',
-      180: '0xa5f8C5Dbd5F286960b9d90548680aE5ebFf07652',
+      180: '0x040053e31930DF94E5e7ef234dc6FbD0f8711030',
       // 56: '0xa5f8C5Dbd5F286960b9d90548680aE5ebFf07652',
     },
     poolCategory: PoolCategory.CORE,
@@ -3501,20 +3501,21 @@ const pools: SerializedPoolConfig[] = [
   //   sortOrder: 999,
   //   isFinished: true,
   // },
-  // {
-  //   sousId: 20,
-  //   stakingToken: serializedTokens.bnb,
-  //   earningToken: serializedTokens.cake,
-  //   contractAddress: {
-  //     97: '',
-  //     56: '0x555Ea72d7347E82C614C16f005fA91cAf06DCB5a',
-  //   },
-  //   poolCategory: PoolCategory.BINANCE,
-  //   harvest: true,
-  //   tokenPerBlock: '0.5',
-  //   sortOrder: 999,
-  //   isFinished: true,
-  // },
+  {
+    sousId: 20,
+    stakingToken: serializedTokens.bnb,
+    earningToken: serializedTokens.cake,
+    contractAddress: {
+      97: '',
+      180: '0x0B182cDD9E2Bd1Ce5F838a64ebecbC3da46cD790'
+      // 56: '0x555Ea72d7347E82C614C16f005fA91cAf06DCB5a',
+    },
+    poolCategory: PoolCategory.BINANCE,
+    harvest: true,
+    tokenPerBlock: '0.5',
+    sortOrder: 999,
+    isFinished: false,
+  },
   // {
   //   sousId: 19,
   //   stakingToken: serializedTokens.cake,
@@ -3727,6 +3728,5 @@ const pools: SerializedPoolConfig[] = [
   // },
 ].filter((p) => !!p.contractAddress[CHAIN_ID])
 
-console.log(CHAIN_ID)
 
 export default pools

@@ -36,7 +36,7 @@ const LangSelector: React.FC<Props> = ({
       </Button>
     }
   >
-    {langs.map((lang) => (
+    {/* {langs.map((lang) => (
       <MenuButton
         key={lang.locale}
         fullWidth
@@ -46,7 +46,7 @@ const LangSelector: React.FC<Props> = ({
       >
         {lang.language}
       </MenuButton>
-    ))}
+    ))} */}
   </Dropdown>
 );
 

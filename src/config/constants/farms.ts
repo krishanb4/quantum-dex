@@ -11,9 +11,9 @@ const farms: SerializedFarmConfig[] = [
   {
     pid: 0,
     v1pid: 0,
-    lpSymbol: 'CAKE',
+    lpSymbol: 'AME',
     lpAddresses: {
-      180: '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82',
+      180: '0xCc9bD40124EfedF6F198B8b5b50697dC635FaaC4',
       97: '',
       // 56: '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82',
     },
@@ -23,9 +23,9 @@ const farms: SerializedFarmConfig[] = [
   {
     pid: 2,
     v1pid: 251,
-    lpSymbol: 'CAKE-BNB LP',
+    lpSymbol: 'QTS-AME LP',
     lpAddresses: {
-      180: '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82',
+      180: '0x554Ef451793a187A89CF8063e274A2b2E24A21f9',
       97: '0x3ed8936cAFDF85cfDBa29Fbe5940A5b0524824F4',
       // 56: '0x0eD7e52944161450477ee417DE9Cd3a859b14fD0',
     },
@@ -35,9 +35,9 @@ const farms: SerializedFarmConfig[] = [
   {
     pid: 3,
     v1pid: 252,
-    lpSymbol: 'BUSD-BNB LP',
+    lpSymbol: 'QUSD-AME LP',
     lpAddresses: {
-      180: '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82',
+      180: '0xE84E03AA9544C91075e58c5Eb909D97092fc9B68',
       97: '',
       //  56: '0x58F876857a02D6762E0101bb5C46A8c1ED44Dc16',
     },

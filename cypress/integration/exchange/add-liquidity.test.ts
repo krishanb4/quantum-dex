@@ -62,7 +62,7 @@ describe('Add Liquidity', () => {
     cy.url().should('contain', '/add/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82/BNB')
   })
 
-  it('redirects /add/WBNB to /add/WBNB/token', () => {
+  it('redirects /add/W to /add/WBNB/token', () => {
     cy.visit('/add/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c-0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82')
     cy.url().should(
       'contain',

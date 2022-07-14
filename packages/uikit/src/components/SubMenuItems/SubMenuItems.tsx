@@ -19,15 +19,15 @@ const SubMenuItems: React.FC<SubMenuItemsProps> = ({ items = [], activeItem, isM
         const isExternalLink = type === DropdownMenuItemType.EXTERNAL_LINK;
         const linkProps = isExternalLink
           ? {
-              as: "a",
-              target: "_blank",
-            }
+            as: "a",
+            target: "_blank",
+          }
           : {};
 
         return (
           label && (
             <Box key={label} mr="20px">
-              <MenuItem href={href} isActive={href === activeItem} variant="subMenu" {...itemProps} {...linkProps}>
+              {/* <MenuItem href={href} isActive={href === activeItem} variant="subMenu" {...itemProps} {...linkProps}>
                 {Icon && <Icon color={href === activeItem ? "secondary" : "textSubtle"} mr="4px" />}
                 {label}
                 {isExternalLink && (
@@ -35,7 +35,7 @@ const SubMenuItems: React.FC<SubMenuItemsProps> = ({ items = [], activeItem, isM
                     <OpenNewIcon color="textSubtle" />
                   </Box>
                 )}
-              </MenuItem>
+              </MenuItem> */}
             </Box>
           )
         );

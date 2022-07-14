@@ -31,6 +31,7 @@ import { ConfirmLimitOrderModal } from './components/ConfirmLimitOrderModal'
 import getRatePercentageDifference from './utils/getRatePercentageDifference'
 
 const LimitOrders = () => {
+
   // Helpers
   const { account } = useActiveWeb3React()
   const { t } = useTranslation()

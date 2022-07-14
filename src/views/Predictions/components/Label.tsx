@@ -71,7 +71,7 @@ const Interval = styled(Text)`
   }
 `
 
-const Label = styled(Flex)<{ dir: 'left' | 'right' }>`
+const Label = styled(Flex) <{ dir: 'left' | 'right' }>`
   background-color: ${({ theme }) => theme.card.background};
   box-shadow: ${({ theme }) => theme.shadows.level1};
   align-items: ${({ dir }) => (dir === 'right' ? 'flex-end' : 'flex-start')};
@@ -113,7 +113,7 @@ export const PricePairLabel: React.FC = () => {
       </Token>
       <Label dir="left">
         <Title bold textTransform="uppercase">
-          BNBUSD
+          AMEUSD
         </Title>
         <Price fontSize="12px">{`$${countUp}`}</Price>
       </Label>

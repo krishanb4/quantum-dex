@@ -16,9 +16,12 @@ import CakeDataRow from './components/CakeDataRow'
 import { WedgeTopLeft, InnerWedgeWrapper, OuterWedgeWrapper, WedgeTopRight } from './components/WedgeSvgs'
 import UserBanner from './components/UserBanner'
 import MultipleBanner from './components/Banners/MultipleBanner'
-
+// import BackgroundLogo from '/images/background1.jpg'
 const StyledHeroSection = styled(PageSection)`
-  padding-top: 16px;
+
+  background-repeat: no-repeat;
+  background-size: 100%;
+
 
   ${({ theme }) => theme.mediaQueries.md} {
     padding-top: 48px;
@@ -54,17 +57,13 @@ const Home: React.FC = () => {
       <PageMeta />
       <StyledHeroSection
         innerProps={{ style: { margin: '0', width: '100%' } }}
-        background={
-          theme.isDark
-            ? 'radial-gradient(103.12% 50% at 50% 50%, #21193A 0%, #191326 100%)'
-            : 'linear-gradient(139.73deg, #E6FDFF 0%, #F3EFFF 100%)'
-        }
+        style={{ backgroundImage: `url('/images/background2.jpg')` }}
         index={2}
         hasCurvedDivider={false}
       >
         {account && (
           <UserBannerWrapper>
-            <UserBanner />
+            {/* <UserBanner /> */}
           </UserBannerWrapper>
         )}
         <MultipleBanner />
@@ -119,7 +118,7 @@ const Home: React.FC = () => {
         index={2}
         hasCurvedDivider={false}
       >
-        <WinSection />
+        {/* <WinSection /> */}
       </PageSection>
       <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}

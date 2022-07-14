@@ -38,6 +38,7 @@ export class WrappedTokenInfo extends Token {
   }
 }
 
+
 export type TokenAddressMap = Readonly<{
   [chainId in ChainId]: Readonly<{ [tokenAddress: string]: { token: WrappedTokenInfo; list: TokenList } }>
 }>
@@ -555,7 +556,7 @@ export interface LotteryRoundUserTickets {
   tickets?: LotteryTicket[]
 }
 
-interface LotteryRoundGenerics {
+export interface LotteryRoundGenerics {
   isLoading?: boolean
   lotteryId: string
   status: LotteryStatus

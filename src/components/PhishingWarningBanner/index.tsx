@@ -8,11 +8,10 @@ const Container = styled(Flex)`
   height: 100%;
   padding: 12px;
   align-items: center;
-  background: linear-gradient(0deg, rgba(39, 38, 44, 0.4), rgba(39, 38, 44, 0.4)),
-    linear-gradient(180deg, #8051d6 0%, #492286 100%);
+  background: llinear-gradient(139.73deg,#E5FDFF 0%,#65CCB8 100%);
   ${({ theme }) => theme.mediaQueries.md} {
     padding: 0px;
-    background: linear-gradient(180deg, #8051d6 0%, #492286 100%);
+    background: linear-gradient(180deg,#dcfafa 0%,#85d8ca 100%);
   }
 `
 
@@ -43,8 +42,8 @@ const PhishingWarningBanner: React.FC = () => {
   const { t } = useTranslation()
   const [, hideBanner] = usePhishingBannerManager()
   const { isMobile, isMd } = useMatchBreakpoints()
-  const warningText = t("please make sure you're visiting https://pancakeswap.finance - check the URL carefully.")
-  const warningTextAsParts = warningText.split(/(https:\/\/pancakeswap.finance)/g)
+  const warningText = t("please make sure you're visiting https://quantumdex.finance - check the URL carefully.")
+  const warningTextAsParts = warningText.split(/(https:\/\/quantumdex.finance)/g)
   const warningTextComponent = (
     <>
       <Text as="span" color="warning" small bold textTransform="uppercase">
@@ -56,8 +55,8 @@ const PhishingWarningBanner: React.FC = () => {
           key={i}
           small
           as="span"
-          bold={text === 'https://pancakeswap.finance'}
-          color={text === 'https://pancakeswap.finance' ? '#FFFFFF' : '#BDC2C4'}
+          bold={text === 'https://quantumdex.finance'}
+          color={text === 'https://quantumdex.finance' ? '#FFFFFF' : '#000'}
         >
           {text}
         </Text>
@@ -77,9 +76,9 @@ const PhishingWarningBanner: React.FC = () => {
         <>
           <InnerContainer>
             <picture>
-              <source type="image/webp" srcSet="/images/decorations/phishing-warning-bunny.webp" />
+              {/* <source type="image/webp" srcSet="/images/decorations/phishing-warning-bunny.webp" />
               <source type="image/png" srcSet="/images/decorations/phishing-warning-bunny.png" />
-              <img src="/images/decorations/phishing-warning-bunny.png" alt="phishing-warning" width="92px" />
+              <img src="/images/decorations/phishing-warning-bunny.png" alt="phishing-warning" width="92px" /> */}
             </picture>
             <SpeechBubble>{warningTextComponent}</SpeechBubble>
           </InnerContainer>

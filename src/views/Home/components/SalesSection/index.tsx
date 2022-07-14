@@ -43,13 +43,13 @@ const SalesSection: React.FC<SalesSectionProps> = (props) => {
             <Button mr="16px">
               {primaryButton.external ? (
                 <Link external href={primaryButton.to}>
-                  <Text color="card" bold fontSize="16px">
+                  <Text color="black" bold fontSize="16px">
                     {primaryButton.text}
                   </Text>
                 </Link>
               ) : (
                 <RouterLink to={primaryButton.to}>
-                  <Text color="card" bold fontSize="16px">
+                  <Text color="black" bold fontSize="16px">
                     {primaryButton.text}
                   </Text>
                 </RouterLink>

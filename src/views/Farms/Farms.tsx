@@ -178,12 +178,12 @@ const Farms: React.FC = ({ children }) => {
         const totalLiquidity = new BigNumber(farm.lpTotalInQuoteToken).times(farm.quoteTokenPriceBusd)
         const { cakeRewardsApr, lpRewardsApr } = isActive
           ? getFarmApr(
-              new BigNumber(farm.poolWeight),
-              cakePrice,
-              totalLiquidity,
-              farm.lpAddresses[ChainId.MAINNET],
-              regularCakePerBlock,
-            )
+            new BigNumber(farm.poolWeight),
+            cakePrice,
+            totalLiquidity,
+            farm.lpAddresses[ChainId.MAINNET],
+            regularCakePerBlock,
+          )
           : { cakeRewardsApr: 0, lpRewardsApr: 0 }
 
         return { ...farm, apr: cakeRewardsApr, lpRewardsApr, liquidity: totalLiquidity }
@@ -361,12 +361,12 @@ const Farms: React.FC = ({ children }) => {
           {t('Stake LP tokens to earn.')}
         </Heading>
         <NextLinkFromReactRouter to="/farms/auction" id="lottery-pot-banner">
-          <Button p="0" variant="text">
+          {/* <Button p="0" variant="text">
             <Text color="primary" bold fontSize="16px" mr="4px">
               {t('Community Auctions')}
             </Text>
             <ArrowForwardIcon color="primary" />
-          </Button>
+          </Button> */}
         </NextLinkFromReactRouter>
       </PageHeader>
       <Page>
