@@ -96,11 +96,12 @@ const Hero = () => {
 
   return (
     <>
-      <BgWrapper>
+      {/* <BgWrapper>
         <InnerWrapper>{theme.isDark ? <SlideSvgDark width="100%" /> : <SlideSvgLight width="100%" />}</InnerWrapper>
-      </BgWrapper>
+      </BgWrapper> */}
       <Flex
         position="relative"
+        height="550px"
         flexDirection={['column-reverse', null, null, 'row']}
         alignItems={['flex-end', null, null, 'center']}
         justifyContent="center"
@@ -108,16 +109,16 @@ const Hero = () => {
         id="homepage-hero"
       >
         <Flex flex="1" flexDirection="column">
-          <Heading scale="xxl" color="secondary" mb="24px">
-            {t('The moon is made of pancakes.')}
+          <Heading scale="xxl" color="#fff" mb="24px">
+            {t('#1 Decentralized platform in the AME chain')}
           </Heading>
-          <Heading scale="md" mb="24px">
-            {t('Trade, earn, and win crypto on the most popular decentralized platform in the galaxy.')}
+          <Heading scale="md" mb="24px" color="#fff">
+            {t('Trade, earn, and win crypto on QuantumDex')}
           </Heading>
           <Flex>
-            {!account && <ConnectWalletButton mr="8px" />}
+            {!account && <ConnectWalletButton style={{ color: 'black' }} mr="8px" />}
             <NextLinkFromReactRouter to="/swap">
-              <Button variant={!account ? 'secondary' : 'primary'}>{t('Trade Now')}</Button>
+              <Button style={{ color: 'black' }} variant={!account ? 'secondary' : 'primary'}>{t('Trade Now')}</Button>
             </NextLinkFromReactRouter>
           </Flex>
         </Flex>
@@ -128,12 +129,12 @@ const Hero = () => {
           mb={['24px', null, null, '0']}
           position="relative"
         >
-          <BunnyWrapper>
+          {/* <BunnyWrapper>
             <Image src={bunnyImage} priority placeholder="blur" alt={t('Lunar bunny')} />
           </BunnyWrapper>
           <StarsWrapper>
             <CompositeImage {...starsImage} />
-          </StarsWrapper>
+          </StarsWrapper> */}
         </Flex>
       </Flex>
     </>

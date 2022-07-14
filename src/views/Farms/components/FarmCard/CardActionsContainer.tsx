@@ -55,7 +55,7 @@ const CardActions: React.FC<FarmCardActionsProps> = ({ farm, account, addLiquidi
     return isApproved ? (
       <StakeAction {...farm} lpLabel={lpLabel} addLiquidityUrl={addLiquidityUrl} displayApr={displayApr} />
     ) : (
-      <Button mt="8px" width="100%" disabled={pendingTx} onClick={handleApprove}>
+      <Button mt="8px" width="100%" style={{ color: 'black' }} disabled={pendingTx} onClick={handleApprove}>
         {t('Enable Contract')}
       </Button>
     )

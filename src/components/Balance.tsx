@@ -35,7 +35,7 @@ const Balance: React.FC<BalanceProps> = ({
 
   return (
     <Text color={isDisabled ? 'textDisabled' : color} onClick={onClick} {...props}>
-      <CountUp
+      {/* <CountUp
         start={previousValue.current}
         end={value}
         prefix={prefix}
@@ -43,7 +43,7 @@ const Balance: React.FC<BalanceProps> = ({
         decimals={decimals}
         duration={1}
         separator=","
-      />
+      /> */}
     </Text>
   )
 }

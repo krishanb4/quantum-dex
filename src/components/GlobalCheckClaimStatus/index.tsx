@@ -32,7 +32,7 @@ const GlobalCheckClaim: React.FC<GlobalCheckClaimStatusProps> = ({ excludeLocati
   const [canClaimAnniversaryPoints, setCanClaimAnniversaryPoints] = useState(false)
   const { account } = useWeb3React()
   const { pathname } = useRouter()
-  const [onPresentAnniversaryModal] = useModal(<AnniversaryAchievementModal />)
+  // const [onPresentAnniversaryModal] = useModal(<AnniversaryAchievementModal />)
 
   // Check claim status
   useEffect(() => {
@@ -51,11 +51,11 @@ const GlobalCheckClaim: React.FC<GlobalCheckClaimStatusProps> = ({ excludeLocati
   useEffect(() => {
     const matchesSomeLocations = excludeLocations.some((location) => pathname.includes(location))
 
-    if (canClaimAnniversaryPoints && !matchesSomeLocations && !hasDisplayedModal.current) {
-      onPresentAnniversaryModal()
-      hasDisplayedModal.current = true
-    }
-  }, [pathname, excludeLocations, hasDisplayedModal, onPresentAnniversaryModal, canClaimAnniversaryPoints])
+    // if (canClaimAnniversaryPoints && !matchesSomeLocations && !hasDisplayedModal.current) {
+    //   onPresentAnniversaryModal()
+    //   hasDisplayedModal.current = true
+    // }
+  }, [pathname, excludeLocations, hasDisplayedModal, canClaimAnniversaryPoints])
 
   // Reset the check flag when account changes
   useEffect(() => {

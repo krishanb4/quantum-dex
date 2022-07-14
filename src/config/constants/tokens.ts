@@ -26,7 +26,7 @@ export const mainnetTokens = defineTokens({
     MAINNET,
     '0x15921c21652afea747f0742e8e37f8b589c27f67',
     18,
-    'QTM',
+    'QTS',
     'QuantumDex Token',
     'https://quantumdex.finance/',
   ),
@@ -213,7 +213,7 @@ export const mainnetTokens = defineTokens({
   // ),
   syrup: new Token(
     MAINNET,
-    '0x85d2631d6ae7429b9071c95c309a8a248a2f9a5e',
+    '0x85d2631d6ae7429b9071c95c309a8a248a2f9a5e', 
     18,
     'SYRUP',
     'SyrupBar Token',

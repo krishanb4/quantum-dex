@@ -15,11 +15,11 @@ const AnimatedIconComponent: React.FC<IconComponentType> = ({
   return IconElement ? (
     <StyledAnimatedIconComponent isActive={isActive} hasFillIcon={!!IconElementFill} {...props}>
       <StyledIconContainer activeBackgroundColor={activeBackgroundColor}>
-        <IconElement color={color} />
+        {/* <IconElement color={color} /> */}
       </StyledIconContainer>
       {!!IconElementFill && (
         <StyledIconContainer activeBackgroundColor={activeBackgroundColor} {...props}>
-          <IconElementFill color={activeColor} />
+          {/* <IconElementFill color={activeColor} /> */}
         </StyledIconContainer>
       )}
     </StyledAnimatedIconComponent>

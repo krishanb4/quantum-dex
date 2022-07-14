@@ -48,7 +48,7 @@ const EventDescriptionSection = () => {
             <Flex>
               <Link mr="16px" external={primaryButton.external} href={primaryButton.to}>
                 <Button variant="secondary">
-                  <Text color="card" bold fontSize="16px">
+                  <Text color="black" bold fontSize="16px">
                     {t(primaryButton.text)}
                   </Text>
                 </Button>

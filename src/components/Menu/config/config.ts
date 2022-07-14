@@ -29,10 +29,10 @@ const config: (t: ContextApi['t'], languageCode?: string) => ConfigMenuItemsType
         label: t('Swap'),
         href: '/swap',
       },
-      // {
-      //   label: t('Limit'),
-      //   href: '/limit-orders',
-      // },
+      {
+        label: t('Limit'),
+        href: '/limit-orders',
+      },
       {
         label: t('Liquidity'),
         href: '/liquidity',

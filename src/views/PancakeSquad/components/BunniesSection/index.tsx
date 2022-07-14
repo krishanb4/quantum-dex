@@ -39,7 +39,7 @@ const BunniesSection = () => {
           <Flex>
             <NextLinkFromReactRouter to={primaryButton.to}>
               <Button>
-                <Text color="card" bold fontSize="16px">
+                <Text color="black" bold fontSize="16px">
                   {t(primaryButton.text)}
                 </Text>
               </Button>
