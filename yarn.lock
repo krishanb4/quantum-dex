@@ -3075,7 +3075,7 @@
   resolved "https://registry.npmjs.org/@popperjs/core/-/core-2.11.5.tgz"
   integrity sha512-9X2obfABZuDVLCgPK9aX0a/x4jaOEweTTWE2+9sr0Qqqevj2Uv5XorvusThmc9XGYpS9yI+fhh8RTafBtGposw==
 
-"@qswap/sdk@ˆ3.0.0":
+"@qswap/sdk@3.0.0":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@qswap/sdk/-/sdk-3.0.0.tgz#7e7549e9cbf6f9b1ed95c10f2e5c8791032ecf74"
   integrity sha512-3XxGl1l+M6LJgX/JjWy6fE7QBot3O4tIGPsIbVTS/uaj/YZF+UcbJcWJ3TP2OaTE9QK0Fq5wXShbBkzrY+Na0Q==
