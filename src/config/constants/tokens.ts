@@ -1,4 +1,4 @@
-import { ChainId, Token } from '@pancakeswap/sdk'
+import { ChainId, Token } from '@qswap/sdk'
 import { serializeToken } from 'state/user/hooks/helpers'
 import { CHAIN_ID } from './networks'
 import { SerializedToken } from './types'
@@ -213,7 +213,7 @@ export const mainnetTokens = defineTokens({
   // ),
   syrup: new Token(
     MAINNET,
-    '0x85d2631d6ae7429b9071c95c309a8a248a2f9a5e', 
+    '0x85d2631d6ae7429b9071c95c309a8a248a2f9a5e',
     18,
     'SYRUP',
     'SyrupBar Token',

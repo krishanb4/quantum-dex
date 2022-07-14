@@ -1,4 +1,4 @@
-import { Currency, currencyEquals, ETHER, WETH } from '@pancakeswap/sdk'
+import { Currency, currencyEquals, ETHER, WETH } from '@qswap/sdk'
 import { useMemo } from 'react'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
 import { useTranslation } from 'contexts/Localization'
@@ -9,9 +9,7 @@ import { useWBNBContract } from './useContract'
 import { useCallWithGasPrice } from './useCallWithGasPrice'
 import tokens from '../config/constants/tokens'
 
-
-const wethfrom = tokens.wbnb;
-
+const wethfrom = tokens.wbnb
 
 export enum WrapType {
   NOT_APPLICABLE,
@@ -35,9 +33,8 @@ export default function useWrapCallback(
   const { chainId, account } = useActiveWeb3React()
   const { callWithGasPrice } = useCallWithGasPrice()
   const wbnbContract = useWBNBContract()
- // console.log(wbnbContract);
-  
-  
+  // console.log(wbnbContract);
+
   const balance = useCurrencyBalance(account ?? undefined, inputCurrency)
   // we can always parse the amount typed as the input currency, since wrapping is 1:1
   const inputAmount = useMemo(() => tryParseAmount(typedValue, inputCurrency), [inputCurrency, typedValue])

@@ -14,7 +14,7 @@ import {
   DeserializedFarmConfig,
   FetchStatus,
 } from 'config/constants/types'
-import { Token, ChainId } from '@pancakeswap/sdk'
+import { Token, ChainId } from '@qswap/sdk'
 import { TokenInfo, TokenList, Tags } from '@uniswap/token-lists'
 import { parseUnits } from '@ethersproject/units'
 import { NftToken, State as NftMarketState } from './nftMarket/types'
@@ -37,7 +37,6 @@ export class WrappedTokenInfo extends Token {
     return this.tokenInfo.logoURI
   }
 }
-
 
 export type TokenAddressMap = Readonly<{
   [chainId in ChainId]: Readonly<{ [tokenAddress: string]: { token: WrappedTokenInfo; list: TokenList } }>
