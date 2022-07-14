@@ -1,4 +1,4 @@
-import { Token } from '@pancakeswap/sdk'
+import { Token } from '@qswap/sdk'
 import tokens from 'config/constants/tokens'
 
 interface WarningTokenList {

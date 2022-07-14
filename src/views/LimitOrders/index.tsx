@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from 'react'
-import { CurrencyAmount, Token, Trade } from '@pancakeswap/sdk'
+import { CurrencyAmount, Token, Trade } from '@qswap/sdk'
 import { Button, Box, Flex, useModal, useMatchBreakpoints, BottomDrawer, Link } from '@pancakeswap/uikit'
 
 import { useTranslation } from 'contexts/Localization'
@@ -31,7 +31,6 @@ import { ConfirmLimitOrderModal } from './components/ConfirmLimitOrderModal'
 import getRatePercentageDifference from './utils/getRatePercentageDifference'
 
 const LimitOrders = () => {
-
   // Helpers
   const { account } = useActiveWeb3React()
   const { t } = useTranslation()

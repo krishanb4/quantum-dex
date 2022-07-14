@@ -1,5 +1,5 @@
 import { Dispatch, SetStateAction } from 'react'
-import { Token } from '@pancakeswap/sdk'
+import { Token } from '@qswap/sdk'
 import BigNumber from 'bignumber.js'
 import { VaultPosition, VaultPositionParams } from 'utils/cakePool'
 import { DeserializedLockedVaultUser } from 'state/types'
