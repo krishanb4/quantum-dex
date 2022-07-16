@@ -14,7 +14,7 @@ const isUserRejected = (err) => {
 const ENV = process.env.VERCEL_ENV || process.env.NODE_ENV
 
 Sentry.init({
-  dsn: SENTRY_DSN || 'https://4f9027d37e364da99f850a584ff77277@o1232105.ingest.sentry.io/6380034',
+  dsn: SENTRY_DSN || 'https://75d237b21a774ba4967b088106695e2c@o1243091.ingest.sentry.io/6398155',
   integrations: [
     new Sentry.Integrations.Breadcrumbs({
       console: ENV === 'production',
