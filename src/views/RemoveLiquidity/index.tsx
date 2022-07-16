@@ -117,7 +117,6 @@ export default function RemoveLiquidity() {
 
     // try to gather a signature for permission
     const nonce = await pairContract.nonces(account)
-    console.log(chainId)
 
     const EIP712Domain = [
       { name: 'name', type: 'string' },
@@ -215,8 +214,6 @@ export default function RemoveLiquidity() {
 
     const currencyBIsBNB = currencyB === ETHER
     const oneCurrencyIsBNB = currencyA === ETHER || currencyBIsBNB
-    console.log(currencyBIsBNB)
-    console.log(oneCurrencyIsBNB)
 
     if (!tokenA || !tokenB) {
       toastError(t('Error'), t('Could not wrap'))

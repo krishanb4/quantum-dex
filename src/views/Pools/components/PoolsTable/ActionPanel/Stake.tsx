@@ -443,6 +443,7 @@ const Staked: React.FunctionComponent<StackedActionProps> = ({ pool, userDataLoa
             onClick={stakingTokenBalance.gt(0) ? onStake : onPresentTokenRequired}
             variant="secondary"
             disabled={isFinished}
+
           >
             {t('Stake')}
           </Button>

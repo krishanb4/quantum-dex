@@ -3045,6 +3045,18 @@
   dependencies:
     "@octokit/openapi-types" "^12.7.0"
 
+"@qswap/sdk@^2.4.5":
+  version "2.4.5"
+  resolved "https://registry.npmjs.org/@qswap/sdk/-/sdk-2.4.5.tgz"
+  integrity sha512-qfHOPGXitDQ5y1dmYloe6UQe/0Ki0enow4MLtr5W49Jl7ZXr8oB6XV7usYtT63R7vqLSKY83rd8Wyw18vxP7dA==
+  dependencies:
+    big.js "^5.2.2"
+    decimal.js-light "^2.5.0"
+    jsbi "^3.1.4"
+    tiny-invariant "^1.1.0"
+    tiny-warning "^1.0.3"
+    toformat "^2.0.0"
+
 "@pedrouid/environment@^1.0.1":
   version "1.0.1"
   resolved "https://registry.npmjs.org/@pedrouid/environment/-/environment-1.0.1.tgz"
@@ -3074,18 +3086,6 @@
   version "2.11.5"
   resolved "https://registry.npmjs.org/@popperjs/core/-/core-2.11.5.tgz"
   integrity sha512-9X2obfABZuDVLCgPK9aX0a/x4jaOEweTTWE2+9sr0Qqqevj2Uv5XorvusThmc9XGYpS9yI+fhh8RTafBtGposw==
-
-"@qswap/sdk@3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@qswap/sdk/-/sdk-3.0.0.tgz#7e7549e9cbf6f9b1ed95c10f2e5c8791032ecf74"
-  integrity sha512-3XxGl1l+M6LJgX/JjWy6fE7QBot3O4tIGPsIbVTS/uaj/YZF+UcbJcWJ3TP2OaTE9QK0Fq5wXShbBkzrY+Na0Q==
-  dependencies:
-    big.js "^5.2.2"
-    decimal.js-light "^2.5.0"
-    jsbi "^3.1.4"
-    tiny-invariant "^1.1.0"
-    tiny-warning "^1.0.3"
-    toformat "^2.0.0"
 
 "@reduxjs/toolkit@^1.5.0":
   version "1.8.3"

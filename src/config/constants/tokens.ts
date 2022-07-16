@@ -215,8 +215,8 @@ export const mainnetTokens = defineTokens({
     MAINNET,
     '0x85d2631d6ae7429b9071c95c309a8a248a2f9a5e',
     18,
-    'SYRUP',
-    'SyrupBar Token',
+    'MERCURY',
+    'Mercury Token',
     'https://pancakeswap.finance/',
   ),
   // pha: new Token(

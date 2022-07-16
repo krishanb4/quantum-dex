@@ -581,13 +581,14 @@ const tokens = {
     projectLink: "https://compound.finance/",
   },
   syrup: {
-    symbol: "SYRUP",
+    symbol: "MERCURY",
     address: {
-      56: "0x009cF7bC57584b7998236eff51b98A168DceA9B0",
+      180: "0x85d2631d6AE7429B9071c95C309a8a248A2F9A5e",
+     // 56: "0x009cF7bC57584b7998236eff51b98A168DceA9B0",
       97: "0xfE1e507CeB712BDe086f3579d2c03248b2dB77f9",
     },
     decimals: 18,
-    projectLink: "https://pancakeswap.finance/",
+    projectLink: "https://quantumdex.finance/",
   },
   bifi: {
     symbol: "BIFI",

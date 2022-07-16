@@ -42,9 +42,9 @@ export const earnSectionData = (t: TranslateFunction): SalesSectionProps => ({
   images: {
     path: '/images/home/earn/',
     attributes: [
-      { src: 'pie', alt: t('Pie chart') },
-      { src: 'stonks', alt: t('Stocks chart') },
-      { src: 'folder', alt: t('Folder with cake token') },
+      { src: 'BUNSEN', alt: t('Pie chart') },
+      { src: '2BEAKER', alt: t('Stocks chart') },
+      { src: 'BEAKER', alt: t('Folder with cake token') },
     ],
   },
 })

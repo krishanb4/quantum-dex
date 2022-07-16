@@ -82,6 +82,7 @@ export const useBUSDCurrencyAmount = (currency: Currency, amount: number): numbe
 
 export const useBUSDCakeAmount = (amount: number): number | undefined => {
   const cakeBusdPrice = useCakeBusdPrice()
+
   if (cakeBusdPrice) {
     return multiplyPriceByAmount(cakeBusdPrice, amount)
   }
@@ -90,5 +91,6 @@ export const useBUSDCakeAmount = (amount: number): number | undefined => {
 
 export const useBNBBusdPrice = (): Price | undefined => {
   const bnbBusdPrice = useBUSDPrice(tokens.wbnb)
+
   return bnbBusdPrice
 }
