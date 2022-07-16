@@ -22,7 +22,7 @@ export interface NavProps {
   globalMenu?: ReactElement;
   links: Array<MenuItemsType>;
   subLinks: Array<SubMenuItemsType>;
-  footerLinks: Array<FooterLinkType>;
+ footerLinks: Array<FooterLinkType>;
   activeItem: string;
   activeSubItem: string;
   isDark: boolean;

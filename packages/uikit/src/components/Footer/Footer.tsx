@@ -43,7 +43,7 @@ const MenuItem: React.FC<FooterProps> = ({
           alignItems="flex-start"
           mb={["42px", null, "36px"]}
         >
-          {items?.map((item) => (
+          {/* {items?.map((item) => (
             <StyledList key={item.label}>
               <StyledListItem>{item.label}</StyledListItem>
               {item.items?.map(({ label, href, isHighlighted = false }) => (
@@ -64,7 +64,7 @@ const MenuItem: React.FC<FooterProps> = ({
                 </StyledListItem>
               ))}
             </StyledList>
-          ))}
+          ))} */}
           <Box display={["none", null, "block"]}>
             <LogoWithTextIcon isDark width="160px" />
           </Box>

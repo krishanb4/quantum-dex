@@ -35,27 +35,27 @@ const Stats = () => {
 
   return (
     <Flex justifyContent="center" alignItems="center" flexDirection="column">
-      <GradientLogo height="48px" width="48px" mb="24px" />
-      <Heading textAlign="center" scale="xl">
+      {/* <GradientLogo height="48px" width="48px" mb="24px" /> */}
+      {/* <Heading textAlign="center" scale="xl">
         {t('Used by millions.')}
-      </Heading>
-      <Heading textAlign="center" scale="xl" mb="32px">
+      </Heading> */}
+      {/* <Heading textAlign="center" scale="xl" mb="32px">
         {t('Trusted with billions.')}
-      </Heading>
-      <Text textAlign="center" color="textSubtle">
+      </Heading> */}
+      {/* <Text textAlign="center" color="textSubtle">
         {t('QuantumDex has the most users of any decentralized platform, ever.')}
-      </Text>
+      </Text> */}
       <Flex flexWrap="wrap">
-        <Text display="inline" textAlign="center" color="textSubtle" mb="20px">
+        {/* <Text display="inline" textAlign="center" color="textSubtle" mb="20px">
           {entrusting}
           <>{tvl ? <>{tvlString}</> : <Skeleton display="inline-block" height={16} width={70} mt="2px" />}</>
           {inFunds}
-        </Text>
+        </Text> */}
       </Flex>
 
-      <Text textAlign="center" color="textSubtle" bold mb="32px">
+      {/* <Text textAlign="center" color="textSubtle" bold mb="32px">
         {t('Will you join them?')}
-      </Text>
+      </Text> */}
 
       <Flex flexDirection={['column', null, null, 'row']}>
         <IconCard {...UsersCardData} mr={[null, null, null, '16px']} mb={['16px', null, null, '0']}>

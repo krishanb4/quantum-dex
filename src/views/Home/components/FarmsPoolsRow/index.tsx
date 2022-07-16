@@ -67,7 +67,7 @@ const FarmsPoolsRow = () => {
     <div ref={observerRef}>
       <Flex flexDirection="column" mt="24px">
         <Flex mb="24px">
-          <RowHeading text={showFarms ? t('Top Farms') : t('Top Syrup Pools')} />
+          {/* <RowHeading text={showFarms ? t('Top Farms') : t('Top Syrup Pools')} />
           <IconButton
             variant="text"
             height="100%"
@@ -79,9 +79,9 @@ const FarmsPoolsRow = () => {
             }}
           >
             <SwapVertIcon height="24px" width="24px" color="textSubtle" />
-          </IconButton>
+          </IconButton> */}
         </Flex>
-        <Box height={['240px', null, '80px']}>
+        {/* <Box height={['240px', null, '80px']}>
           <Grid>
             {topFarms.map((topFarm, index) => (
               <TopFarmPool
@@ -107,7 +107,7 @@ const FarmsPoolsRow = () => {
               />
             ))}
           </Grid>
-        </Box>
+        </Box> */}
       </Flex>
     </div>
   )

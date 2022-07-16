@@ -204,7 +204,7 @@ const useTooltip = (content: React.ReactNode, options: TooltipOptions): TooltipR
       style={styles.popper}
       {...attributes.popper}
     >
-      {/* <ThemeProvider theme={invertTheme}>{content}</ThemeProvider> */}
+      <ThemeProvider theme={invertTheme}>{content}</ThemeProvider>
       <Arrow ref={setArrowElement} style={styles.arrow} />
     </StyledTooltip>
   );

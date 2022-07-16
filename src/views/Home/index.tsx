@@ -107,9 +107,10 @@ const Home: React.FC = () => {
         </OuterWedgeWrapper>
         <SalesSection {...earnSectionData(t)} />
         <FarmsPoolsRow />
-      </PageSection>
+        {/* </PageSection>
       <PageSection
-        innerProps={{ style: HomeSectionContainerStyles }}
+        innerProps={{ style: HomeSectionContainerStyles }
+        }
         background={
           theme.isDark
             ? 'linear-gradient(180deg, #0B4576 0%, #091115 100%)'
@@ -119,24 +120,25 @@ const Home: React.FC = () => {
         hasCurvedDivider={false}
       >
         {/* <WinSection /> */}
-      </PageSection>
-      <PageSection
+      </PageSection >
+      {/* <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
         background={theme.colors.background}
         index={2}
         hasCurvedDivider={false}
-      >
-        <SalesSection {...cakeSectionData(t)} />
-        <CakeDataRow />
-      </PageSection>
-      <PageSection
-        innerProps={{ style: HomeSectionContainerStyles }}
+      > */}
+      {/* <SalesSection {...cakeSectionData(t)} /> */}
+      {/* <CakeDataRow /> */}
+      {/* </PageSection> */}
+      {/* <PageSection
+        innerProps={{ style: HomeSectionContainerStyles }
+        }
         background="linear-gradient(180deg, #7645D9 0%, #5121B1 100%)"
         index={2}
         hasCurvedDivider={false}
-      >
-        <Footer />
-      </PageSection>
+      > */}
+      {/* <Footer />
+      </PageSection > */}
     </>
   )
 }

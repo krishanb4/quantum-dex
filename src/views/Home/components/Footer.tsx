@@ -86,7 +86,7 @@ const Footer = () => {
 
   return (
     <>
-      <BgWrapper>
+      {/* <BgWrapper>
         <Flex alignItems="center" justifyContent="center" width="100%" height="100%">
           <StyledSunburst />
         </Flex>
@@ -98,8 +98,8 @@ const Footer = () => {
         <BottomRightImgWrapper>
           <CompositeImage {...bottomRightImage} maxHeight="256px" />
         </BottomRightImgWrapper>
-      </FloatingPancakesWrapper>
-      <Wrapper>
+      </FloatingPancakesWrapper> */}
+      {/* <Wrapper>
         <Heading mb="24px" scale="xl" color="white">
           {t('Start in seconds.')}
         </Heading>
@@ -114,7 +114,7 @@ const Footer = () => {
           {t('Learn how to start')}
         </Link>
         {!account && <ConnectWalletButton mt="24px" />}
-      </Wrapper>
+      </Wrapper> */}
     </>
   )
 }

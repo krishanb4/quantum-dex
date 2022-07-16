@@ -55,7 +55,7 @@
         {
             "name": "QuantumDex Token",
             "symbol": "QTS",
-            "address": "0x1B1Eb7C5bBBB0552fa430fB677393fe320E0e719",
+            "address": "0x15921c21652Afea747f0742e8E37f8b589c27F67",
             "chainId": 180,
             "decimals": 18,
             "logoURI": "https://quantumDex.finance/images/tokens/0x1B1Eb7C5bBBB0552fa430fB677393fe320E0e719.png"

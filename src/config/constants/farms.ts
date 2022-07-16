@@ -13,7 +13,7 @@ const farms: SerializedFarmConfig[] = [
     v1pid: 0,
     lpSymbol: 'AME',
     lpAddresses: {
-      180: '0xCc9bD40124EfedF6F198B8b5b50697dC635FaaC4',
+      180: '0xA560e759192e53d79f40933dBAF252c4e440B955',
       97: '',
       // 56: '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82',
     },
@@ -25,7 +25,7 @@ const farms: SerializedFarmConfig[] = [
     v1pid: 251,
     lpSymbol: 'QTS-AME LP',
     lpAddresses: {
-      180: '0x554Ef451793a187A89CF8063e274A2b2E24A21f9',
+      180: '0x9D760d36E44259b5a4Ae7f7eEd5F940B716FdC96',
       97: '0x3ed8936cAFDF85cfDBa29Fbe5940A5b0524824F4',
       // 56: '0x0eD7e52944161450477ee417DE9Cd3a859b14fD0',
     },
@@ -37,7 +37,7 @@ const farms: SerializedFarmConfig[] = [
     v1pid: 252,
     lpSymbol: 'QUSD-AME LP',
     lpAddresses: {
-      180: '0xE84E03AA9544C91075e58c5Eb909D97092fc9B68',
+      180: '0x3BE025f3B967fF52Baa464670b2AeeeB97Bd5F20',
       97: '',
       //  56: '0x58F876857a02D6762E0101bb5C46A8c1ED44Dc16',
     },
