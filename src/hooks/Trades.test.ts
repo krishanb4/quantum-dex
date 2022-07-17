@@ -1,7 +1,7 @@
 import { renderHook } from '@testing-library/react-hooks'
 import { mainnetTokens } from 'config/constants/tokens'
 import { createReduxWrapper } from 'testUtils'
-import { Pair, TokenAmount, CurrencyAmount, Trade } from '@qswap/sdk'
+import { Pair, TokenAmount, CurrencyAmount, Trade } from '@quantumdex/sdk'
 import * as UsePairs from './usePairs'
 import * as Trades from './Trades'
 

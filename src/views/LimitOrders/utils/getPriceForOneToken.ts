@@ -1,4 +1,4 @@
-import { CurrencyAmount, Price } from '@qswap/sdk'
+import { CurrencyAmount, Price } from '@quantumdex/sdk'
 
 /**
  * Given certain amount if input and output tokens

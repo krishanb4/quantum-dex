@@ -1,4 +1,4 @@
-import { Token } from '@qswap/sdk'
+import { Token } from '@quantumdex/sdk'
 // import SwapWarningTokens from 'config/constants/swapWarningTokens'
 
 // const swapWarningTokens = Object.values(SwapWarningTokens)

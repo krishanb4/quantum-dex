@@ -1,4 +1,4 @@
-import { Currency } from '@qswap/sdk'
+import { Currency } from '@quantumdex/sdk'
 import useTheme from 'hooks/useTheme'
 import { useCallback, useState } from 'react'
 import BnbWbnbNotice from './BnbWbnbNotice'

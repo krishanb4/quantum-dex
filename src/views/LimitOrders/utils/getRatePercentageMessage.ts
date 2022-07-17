@@ -1,4 +1,4 @@
-import { Percent } from '@qswap/sdk'
+import { Percent } from '@quantumdex/sdk'
 import { TranslateFunction } from 'contexts/Localization/types'
 
 export enum PercentageDirection {

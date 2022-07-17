@@ -1,4 +1,4 @@
-import { Currency, Percent, Price } from '@qswap/sdk'
+import { Currency, Percent, Price } from '@quantumdex/sdk'
 import { Text } from '@pancakeswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { AutoColumn } from '../../components/Layout/Column'

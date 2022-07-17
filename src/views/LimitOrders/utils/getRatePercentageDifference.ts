@@ -1,4 +1,4 @@
-import { Percent, Price } from '@qswap/sdk'
+import { Percent, Price } from '@quantumdex/sdk'
 
 const getRatePercentageDifference = (currentMarketRate: Price, price: Price) => {
   if (currentMarketRate && price) {

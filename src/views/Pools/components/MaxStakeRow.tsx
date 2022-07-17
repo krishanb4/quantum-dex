@@ -5,7 +5,7 @@ import BigNumber from 'bignumber.js'
 import { useTranslation } from 'contexts/Localization'
 import Balance from 'components/Balance'
 import { getFullDisplayBalance } from 'utils/formatBalance'
-import { Token } from '@qswap/sdk'
+import { Token } from '@quantumdex/sdk'
 
 interface MaxStakeRowProps {
   small?: boolean
@@ -30,9 +30,8 @@ const MaxStakeRow: React.FC<MaxStakeRowProps> = ({
     <Flex flexDirection="column">
       <Flex justifyContent="space-between" alignItems="center">
         <Text small={small}>{t('Max. stake per user')}:</Text>
-        <Text small={small}>{`${getFullDisplayBalance(stakingLimit, stakingToken.decimals, 0)} ${
-          stakingToken.symbol
-        }`}</Text>
+        <Text small={small}>{`${getFullDisplayBalance(stakingLimit, stakingToken.decimals, 0)} ${stakingToken.symbol
+          }`}</Text>
       </Flex>
       {hasPoolStarted && (
         <Flex justifyContent="space-between" alignItems="center">

@@ -1,4 +1,4 @@
-import { ChainId, Token } from '@qswap/sdk'
+import { ChainId, Token } from '@quantumdex/sdk'
 import { serializeToken } from 'state/user/hooks/helpers'
 import { CHAIN_ID } from './networks'
 import { SerializedToken } from './types'

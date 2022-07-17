@@ -1,4 +1,4 @@
-import { ChainId } from '@qswap/sdk'
+import { ChainId } from '@quantumdex/sdk'
 import BigNumber from 'bignumber.js/bignumber'
 import { BIG_TEN } from 'utils/bigNumber'
 

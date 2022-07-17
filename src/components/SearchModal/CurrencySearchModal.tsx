@@ -1,5 +1,5 @@
 import { useCallback, useState } from 'react'
-import { Currency, Token } from '@qswap/sdk'
+import { Currency, Token } from '@quantumdex/sdk'
 import {
   ModalContainer,
   ModalHeader,

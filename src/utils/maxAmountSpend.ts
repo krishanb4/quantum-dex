@@ -1,4 +1,4 @@
-import { CurrencyAmount, ETHER, JSBI } from '@qswap/sdk'
+import { CurrencyAmount, ETHER, JSBI } from '@quantumdex/sdk'
 import { MIN_BNB } from '../config/constants'
 
 /**

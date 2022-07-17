@@ -1,5 +1,5 @@
 import { CSSProperties } from 'react'
-import { Token } from '@qswap/sdk'
+import { Token } from '@quantumdex/sdk'
 import { Button, Text, CheckmarkCircleIcon, useMatchBreakpoints } from '@pancakeswap/uikit'
 import { AutoRow, RowFixed } from 'components/Layout/Row'
 import { AutoColumn } from 'components/Layout/Column'

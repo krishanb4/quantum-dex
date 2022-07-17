@@ -1,4 +1,4 @@
-import { Token } from '@qswap/sdk'
+import { Token } from '@quantumdex/sdk'
 import { SerializedToken } from 'config/constants/types'
 import { WrappedTokenInfo } from 'state/types'
 

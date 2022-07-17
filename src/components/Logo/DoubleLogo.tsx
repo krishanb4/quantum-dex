@@ -1,4 +1,4 @@
-import { Currency } from '@qswap/sdk'
+import { Currency } from '@quantumdex/sdk'
 import styled from 'styled-components'
 import CurrencyLogo from './CurrencyLogo'
 

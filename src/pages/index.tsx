@@ -1,4 +1,4 @@
-import { FACTORY_ADDRESS } from '@qswap/sdk'
+import { FACTORY_ADDRESS } from '@quantumdex/sdk'
 import { getUnixTime, sub } from 'date-fns'
 import { gql } from 'graphql-request'
 import { GetStaticProps } from 'next'

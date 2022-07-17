@@ -1,4 +1,4 @@
-import { Currency, ETHER, Token } from '@qswap/sdk'
+import { Currency, ETHER, Token } from '@quantumdex/sdk'
 
 export function currencyId(currency: Currency): string {
   if (currency === ETHER) return 'AME'

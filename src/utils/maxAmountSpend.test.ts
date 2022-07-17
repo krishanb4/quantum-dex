@@ -1,4 +1,4 @@
-import { CurrencyAmount, JSBI } from '@qswap/sdk'
+import { CurrencyAmount, JSBI } from '@quantumdex/sdk'
 import { maxAmountSpend } from './maxAmountSpend'
 
 describe('maxAmountSpend', () => {

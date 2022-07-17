@@ -12,7 +12,7 @@ import {
 } from '@pancakeswap/uikit'
 import { NextLinkFromReactRouter } from 'components/NextLink'
 import { Activity, NftToken } from 'state/nftMarket/types'
-import { Price } from '@qswap/sdk'
+import { Price } from '@quantumdex/sdk'
 import { getBscScanLink } from 'utils'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
 import ProfileCell from 'views/Nft/market/components/ProfileCell'
@@ -62,13 +62,13 @@ const ActivityRow: React.FC<ActivityRowProps> = ({
     nft && isPBCollection
       ? nft.attributes.find((attribute) => attribute.traitType === 'bunnyId')?.value
       : nft
-      ? nft.tokenId
-      : null
+        ? nft.tokenId
+        : null
 
   const onClickProp = nft
     ? {
-        onClick: onPresentMobileModal,
-      }
+      onClick: onPresentMobileModal,
+    }
     : {}
 
   return (

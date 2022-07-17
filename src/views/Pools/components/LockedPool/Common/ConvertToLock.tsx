@@ -1,4 +1,4 @@
-import { Token } from '@qswap/sdk'
+import { Token } from '@quantumdex/sdk'
 import { Flex, Message, MessageText, useMatchBreakpoints } from '@pancakeswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { memo } from 'react'

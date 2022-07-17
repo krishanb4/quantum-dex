@@ -1,4 +1,4 @@
-import { ChainId } from '@qswap/sdk'
+import { ChainId } from '@quantumdex/sdk'
 import getLpAddress from 'utils/getLpAddress'
 import { CHAIN_ID } from './networks'
 import tokens from './tokens'

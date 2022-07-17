@@ -1,5 +1,5 @@
 import React, { useCallback } from 'react'
-import { Currency, CurrencyAmount, Fraction, Percent, Token, TokenAmount } from '@qswap/sdk'
+import { Currency, CurrencyAmount, Fraction, Percent, Token, TokenAmount } from '@quantumdex/sdk'
 import { Flex, InjectedModalProps, Text } from '@pancakeswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import TransactionConfirmationModal, {

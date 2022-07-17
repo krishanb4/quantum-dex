@@ -1,4 +1,4 @@
-import { JSBI, Price, Token } from '@qswap/sdk'
+import { JSBI, Price, Token } from '@quantumdex/sdk'
 import getRatePercentageDifference from './getRatePercentageDifference'
 import { getRatePercentageMessage, PercentageDirection } from './getRatePercentageMessage'
 

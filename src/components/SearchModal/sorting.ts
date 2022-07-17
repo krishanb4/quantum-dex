@@ -1,4 +1,4 @@
-import { Token, TokenAmount } from '@qswap/sdk'
+import { Token, TokenAmount } from '@quantumdex/sdk'
 import { useMemo } from 'react'
 import { useAllTokenBalances } from '../../state/wallet/hooks'
 

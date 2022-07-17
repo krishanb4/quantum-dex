@@ -1,4 +1,4 @@
-import { ChainId, Currency, CurrencyAmount, ETHER, Token, TokenAmount, WETH } from '@qswap/sdk'
+import { ChainId, Currency, CurrencyAmount, ETHER, Token, TokenAmount, WETH } from '@quantumdex/sdk'
 import tokens from '../config/constants/tokens'
 const wethfrom = tokens.wbnb
 

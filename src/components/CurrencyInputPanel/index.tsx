@@ -1,4 +1,4 @@
-import { Currency, Pair, Token } from '@qswap/sdk'
+import { Currency, Pair, Token } from '@quantumdex/sdk'
 import { Button, ChevronDownIcon, Text, useModal, Flex, Box, MetamaskIcon } from '@pancakeswap/uikit'
 import styled from 'styled-components'
 import { registerToken } from 'utils/wallet'
@@ -120,9 +120,9 @@ export default function CurrencyInputPanel({
                 <Text id="pair" bold>
                   {(currency && currency.symbol && currency.symbol.length > 20
                     ? `${currency.symbol.slice(0, 4)}...${currency.symbol.slice(
-                        currency.symbol.length - 5,
-                        currency.symbol.length,
-                      )}`
+                      currency.symbol.length - 5,
+                      currency.symbol.length,
+                    )}`
                     : currency?.symbol) || t('Select a currency')}
                 </Text>
               )}

@@ -1,4 +1,4 @@
-import { Token, ChainId } from '@qswap/sdk'
+import { Token, ChainId } from '@quantumdex/sdk'
 import tokens from './tokens'
 import farms from './farms'
 import { Ifo } from './types'

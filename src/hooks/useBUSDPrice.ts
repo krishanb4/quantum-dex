@@ -1,4 +1,4 @@
-import { Currency, currencyEquals, JSBI, Price } from '@qswap/sdk'
+import { Currency, currencyEquals, JSBI, Price } from '@quantumdex/sdk'
 import tokens from 'config/constants/tokens'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
 import { useMemo } from 'react'

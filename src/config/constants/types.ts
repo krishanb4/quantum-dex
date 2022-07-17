@@ -1,5 +1,5 @@
 import BigNumber from 'bignumber.js'
-import { Token } from '@qswap/sdk'
+import { Token } from '@quantumdex/sdk'
 
 export type TranslatableText =
   | string

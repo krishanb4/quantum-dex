@@ -1,5 +1,5 @@
 import React from 'react'
-import { Currency, Percent, Price } from '@qswap/sdk'
+import { Currency, Percent, Price } from '@quantumdex/sdk'
 import styled from 'styled-components'
 import { Input, Flex, Text, Button, AutoRenewIcon, SyncAltIcon, HelpIcon, useTooltip } from '@pancakeswap/uikit'
 import { useTranslation } from 'contexts/Localization'
@@ -76,13 +76,13 @@ const LimitOrderPrice: React.FC<LimitOrderPriceProps> = ({
         <Text>
           {realExecutionPriceAsString === 'never executes'
             ? t(
-                'Assuming current gas price this order will never execute. Try increasing the amount of tokens to swap.',
-              )
+              'Assuming current gas price this order will never execute. Try increasing the amount of tokens to swap.',
+            )
             : t('Assuming current gas price it should execute when 1 %assetOneSymbol% = %price% %assetTwoSymbol%', {
-                assetOneSymbol: rateType === Rate.MUL ? inputCurrency?.symbol : outputCurrency?.symbol,
-                assetTwoSymbol: rateType === Rate.MUL ? outputCurrency?.symbol : inputCurrency?.symbol,
-                price: realExecutionPriceAsString,
-              })}
+              assetOneSymbol: rateType === Rate.MUL ? inputCurrency?.symbol : outputCurrency?.symbol,
+              assetTwoSymbol: rateType === Rate.MUL ? outputCurrency?.symbol : inputCurrency?.symbol,
+              price: realExecutionPriceAsString,
+            })}
         </Text>
       )}
     </>,

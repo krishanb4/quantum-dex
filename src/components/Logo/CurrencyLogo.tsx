@@ -1,4 +1,4 @@
-import { Currency, ETHER, Token } from '@qswap/sdk'
+import { Currency, ETHER, Token } from '@quantumdex/sdk'
 import { BinanceIcon } from '@pancakeswap/uikit'
 import { useMemo } from 'react'
 import styled from 'styled-components'
@@ -7,7 +7,7 @@ import useHttpLocations from '../../hooks/useHttpLocations'
 import getTokenLogoURL from '../../utils/getTokenLogoURL'
 import Logo from './Logo'
 
-const StyledLogo = styled(Logo)<{ size: string }>`
+const StyledLogo = styled(Logo) <{ size: string }>`
   width: ${({ size }) => size};
   height: ${({ size }) => size};
   border-radius: 50%;

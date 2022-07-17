@@ -1,5 +1,5 @@
 import { useCallback } from 'react'
-import { ChainId, Currency, Token } from '@qswap/sdk'
+import { ChainId, Currency, Token } from '@quantumdex/sdk'
 import styled from 'styled-components'
 import {
   Button,

@@ -1,4 +1,4 @@
-import { Token } from '@qswap/sdk'
+import { Token } from '@quantumdex/sdk'
 import { Modal, InjectedModalProps } from '@pancakeswap/uikit'
 import ImportToken from 'components/SearchModal/ImportToken'
 import { useTranslation } from 'contexts/Localization'

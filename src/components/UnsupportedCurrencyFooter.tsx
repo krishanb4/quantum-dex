@@ -1,4 +1,4 @@
-import { Currency, Token } from '@qswap/sdk'
+import { Currency, Token } from '@quantumdex/sdk'
 import { Button, Text, Modal, useModal, InjectedModalProps, Link } from '@pancakeswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import styled from 'styled-components'
@@ -31,8 +31,8 @@ const UnsupportedModal: React.FC<Props> = ({ currencies, onDismiss }) => {
   const tokens =
     chainId && currencies
       ? currencies.map((currency) => {
-          return wrappedCurrency(currency, chainId)
-        })
+        return wrappedCurrency(currency, chainId)
+      })
       : []
 
   const unsupportedTokens: { [address: string]: Token } = useUnsupportedTokens()
