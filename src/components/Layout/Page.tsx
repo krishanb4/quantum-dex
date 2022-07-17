@@ -26,7 +26,6 @@ export const PageMeta: React.FC<{ symbol?: string }> = ({ symbol }) => {
   const { t } = useTranslation()
   const { pathname } = useRouter()
   const cakePriceUsd = useCakeBusdPrice()
-  console.log(cakePriceUsd);
 
   const cakePriceUsdDisplay = cakePriceUsd ? `$${cakePriceUsd.toFixed(3)}` : '...'
 
