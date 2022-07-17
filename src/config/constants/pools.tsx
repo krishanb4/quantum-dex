@@ -3507,7 +3507,7 @@ const pools: SerializedPoolConfig[] = [
     earningToken: serializedTokens.cake,
     contractAddress: {
       97: '',
-      180: '0x0B182cDD9E2Bd1Ce5F838a64ebecbC3da46cD790'
+      180: '0xF04870e2265De0357b62c40351311130DaA54Dfd'
       // 56: '0x555Ea72d7347E82C614C16f005fA91cAf06DCB5a',
     },
     poolCategory: PoolCategory.BINANCE,

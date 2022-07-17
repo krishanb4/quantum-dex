@@ -56,7 +56,7 @@ function MyApp(props: AppProps) {
           name="description"
           content="Cheaper and faster than Uniswap? Discover QuantumDex, the leading DEX on AME  Chain (AME) with the best farms in DeFi."
         />
-        <meta name="theme-color" content="#1FC7D4" />
+        <meta name="theme-color" content="#65CCB8" />
         <meta name="twitter:image" content="https://pancakeswap.finance/images/hero.png" />
         <meta
           name="twitter:description"
