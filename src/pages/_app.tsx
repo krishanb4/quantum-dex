@@ -57,7 +57,7 @@ function MyApp(props: AppProps) {
           content="Cheaper and faster than Uniswap? Discover QuantumDex, the leading DEX on AME  Chain (AME) with the best farms in DeFi."
         />
         <meta name="theme-color" content="#65CCB8" />
-        <meta name="twitter:image" content="https://pancakeswap.finance/images/hero.jpg" />
+        <meta name="twitter:image" content="https://quantumdex.finance/images/hero.jpg" />
         <meta
           name="twitter:description"
           content="The most popular AMM on AME! Earn QTS through yield farming, then stake it in Mercury Pools to earn more tokens! Initial Farm Offerings (new token launch model pioneered by QuantumDex), and more, on a platform you can trust."
