@@ -425,7 +425,7 @@ const Farms: React.FC = ({ children }) => {
         </ControlContainer>
         {isInactive && (
           <FinishedTextContainer>
-            <Text fontSize={['16px', null, '20px']} color="failure" pr="4px">
+            {/* <Text fontSize={['16px', null, '20px']} color="failure" pr="4px">
               {t("Don't see the farm you are staking?")}
             </Text>
             <Flex>
@@ -443,7 +443,7 @@ const Farms: React.FC = ({ children }) => {
               >
                 {t('check out v1 farms')}.
               </FinishedTextLink>
-            </Flex>
+          </Flex> */}
           </FinishedTextContainer>
         )}
         {renderContent()}
@@ -453,9 +453,9 @@ const Farms: React.FC = ({ children }) => {
           </Flex>
         )}
         <div ref={observerRef} />
-        <StyledImage src="/images/decorations/3dpan.png" alt="Pancake illustration" width={120} height={103} />
+        <StyledImage src="/images/decorations/1.png" alt="Pancake illustration" width={120} height={103} />
       </Page>
-    </FarmsContext.Provider>
+    </FarmsContext.Provider >
   )
 }
 

@@ -322,12 +322,12 @@ const Pools: React.FC = () => {
         </PoolControls>
         {showFinishedPools && (
           <FinishedTextContainer>
-            <Text fontSize={['16px', null, '20px']} color="failure" pr="4px">
+            {/* <Text fontSize={['16px', null, '20px']} color="failure" pr="4px">
               {t('Looking for v1 CAKE syrup pools?')}
-            </Text>
-            <FinishedTextLink href="/migration" fontSize={['16px', null, '20px']} color="failure">
+            </Text> */}
+            {/* <FinishedTextLink href="/migration" fontSize={['16px', null, '20px']} color="failure">
               {t('Go to migration page')}.
-            </FinishedTextLink>
+            </FinishedTextLink> */}
           </FinishedTextContainer>
         )}
         {account && !userDataLoaded && stakedOnly && (
@@ -340,7 +340,7 @@ const Pools: React.FC = () => {
         <Image
           mx="auto"
           mt="12px"
-          src="/images/decorations/3d-syrup-bunnies.png"
+          src="/images/decorations/2.png"
           alt="Pancake illustration"
           width={192}
           height={184.5}

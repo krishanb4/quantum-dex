@@ -111,10 +111,11 @@ const config: (t: ContextApi['t'], languageCode?: string) => ConfigMenuItemsType
         label: t('Info'),
         href: '/info',
       },
-      /*  {
+       {
         label: t('IFO'),
         href: '/ifo',
       },
+      /*
       {
         label: t('Voting'),
         href: '/voting',
