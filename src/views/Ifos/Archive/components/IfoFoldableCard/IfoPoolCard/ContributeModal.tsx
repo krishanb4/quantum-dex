@@ -167,9 +167,8 @@ const ContributeModal: React.FC<Props> = ({
           <Flex justifyContent="space-between" mb="16px">
             {tooltipVisible && tooltip}
             <TooltipText ref={targetRef}>{label}:</TooltipText>
-            <Text>{`${formatNumber(getBalanceAmount(maximumTokenEntry, currency.decimals).toNumber(), 3, 3)} ${
-              ifo.currency.symbol
-            }`}</Text>
+            <Text>{`${formatNumber(getBalanceAmount(maximumTokenEntry, currency.decimals).toNumber(), 3, 3)} ${ifo.currency.symbol
+              }`}</Text>
           </Flex>
           <Flex justifyContent="space-between" mb="8px">
             <Text>{t('Commit')}:</Text>
@@ -237,7 +236,7 @@ const ContributeModal: React.FC<Props> = ({
             <Link
               fontSize="12px"
               display="inline"
-              href="https://docs.pancakeswap.finance/products/ifo-initial-farm-offering"
+              href="https://docs.quantumdex.finance/products/ifo-initial-farm-offering"
               external
             >
               {t('Read more')}
