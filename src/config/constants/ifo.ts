@@ -9,7 +9,7 @@ const ifos: Ifo[] = [
   {
     id: 'duet',
     address: '0xDF24BE326af4c1fb888f567f41D9a981A4752cf1',
-    isActive: false,
+    isActive: true,
     name: 'DUET',
     poolBasic: {
       saleAmount: '1,200,000 DUET',
@@ -25,7 +25,7 @@ const ifos: Ifo[] = [
     },
     currency: tokens.cake,
     token: tokens.cake,
-    releaseBlockNumber: null,
+    releaseBlockNumber: 19685128,
     campaignId: '511190000',
     articleUrl: 'https://pancakeswap.finance/voting/proposal/QmXwoYYd8rkahVbxiGKsTa4rYRRFWPxhRGAHy3hVwK3Q2z',
     tokenOfferingPrice: 0.3,

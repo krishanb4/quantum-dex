@@ -32,8 +32,7 @@ const formatPool = (pool) => ({
 const useGetPublicIfoData = (ifo: Ifo): PublicIfoData => {
   const { address, releaseBlockNumber, version } = ifo
   const cakePriceUsd = usePriceCakeBusd()
- // const lpTokenPriceInUsd = useLpTokenPrice(ifo.currency.symbol)
-  const lpTokenPriceInUsd = new BigNumber(1);
+  const lpTokenPriceInUsd = useLpTokenPrice(ifo.currency.symbol)
   const currencyPriceInUSD = ifo.currency === tokens.cake ? cakePriceUsd : lpTokenPriceInUsd
 
   const [state, setState] = useState({
@@ -129,8 +128,10 @@ const useGetPublicIfoData = (ifo: Ifo): PublicIfoData => {
       const poolBasicFormatted = formatPool(poolBasic)
       const poolUnlimitedFormatted = formatPool(poolUnlimited)
 
-      const startBlockNum = startBlock ? startBlock[0].toNumber() : 0
-      const endBlockNum = endBlock ? endBlock[0].toNumber() : 0
+     // const startBlockNum = startBlock ? startBlock[0].toNumber() : 0
+      const startBlockNum = 15961470;
+     // const endBlockNum = endBlock ? endBlock[0].toNumber() : 0
+      const endBlockNum = 19785187;
       const taxRateNum = taxRate ? FixedNumber.from(taxRate[0]).divUnsafe(TAX_PRECISION).toUnsafeFloat() : 0
 
       const status = getStatus(currentBlock, startBlockNum, endBlockNum)
