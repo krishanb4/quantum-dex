@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { PublicIfoData } from '../../types'
 import LiveTimer, { SoonTimer } from './Timer'
 
-const BigCurve = styled(Box)<{ $status: PublicIfoData['status'] }>`
+const BigCurve = styled(Box) <{ $status: PublicIfoData['status'] }>`
   width: 150%;
   position: absolute;
   top: -150%;
@@ -37,8 +37,8 @@ const BigCurve = styled(Box)<{ $status: PublicIfoData['status'] }>`
 `
 
 export const IfoRibbon = ({ publicIfoData }: { publicIfoData: PublicIfoData }) => {
-  const { status } = publicIfoData
-
+  //  const { status } = publicIfoData
+  const status = 'live';
   let Component
   if (status === 'finished') {
     Component = <IfoRibbonEnd />

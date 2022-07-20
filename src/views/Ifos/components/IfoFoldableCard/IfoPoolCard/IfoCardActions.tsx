@@ -27,7 +27,6 @@ const IfoCardActions: React.FC<Props> = ({
   ifo,
   publicIfoData,
   walletIfoData,
-  hasProfile,
   isLoading,
   isEligible,
   enableStatus,
@@ -43,7 +42,7 @@ const IfoCardActions: React.FC<Props> = ({
   if (!account) {
     return <ConnectWalletButton width="100%" />
   }
-
+  const hasProfile = true;
   if (!hasProfile) {
     return (
       <Button as={NextLinkFromReactRouter} to={`${nftsBaseUrl}/profile/${account.toLowerCase()}`} width="100%">

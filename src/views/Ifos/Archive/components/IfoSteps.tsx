@@ -117,7 +117,8 @@ const IfoSteps: React.FC<TypeProps> = () => {
   }
 
   const renderCardBody = (step: number) => {
-    const isStepValid = stepsValidationStatus[step]
+    //  const isStepValid = stepsValidationStatus[step]
+    const isStepValid = true
 
     const renderAccountStatus = () => {
       if (!account) {

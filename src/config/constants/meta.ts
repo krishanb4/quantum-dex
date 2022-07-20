@@ -138,6 +138,10 @@ export const getCustomMeta = (path: string, t: ContextApi['t']): PageMeta => {
       return {
         title: `${t('Pancake Squad')} | ${t('QuantumDex')}`,
       }
+    case '/airdrop':
+      return {
+        title: `${t('AirDrop')} | ${t('QuantumDex')}`,
+      }
     default:
       return null
   }

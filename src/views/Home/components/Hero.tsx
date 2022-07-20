@@ -101,7 +101,7 @@ const Hero = () => {
       </BgWrapper> */}
       <Flex
         position="relative"
-        height="550px"
+        className="hero-css"
         flexDirection={['column-reverse', null, null, 'row']}
         alignItems={['flex-end', null, null, 'center']}
         justifyContent="center"

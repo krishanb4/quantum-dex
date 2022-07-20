@@ -112,8 +112,12 @@ const config: (t: ContextApi['t'], languageCode?: string) => ConfigMenuItemsType
         href: '/info',
       },
        {
-        label: t('IFO'),
+        label: t('Sale'),
         href: '/ifo',
+      },
+      {
+        label: t('AirDrop'),
+        href: '/airdrop',
       },
       /*
       {

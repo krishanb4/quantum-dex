@@ -36,6 +36,8 @@ const multicall = async <T = any>(abi: any[], calls: Call[]): Promise<T> => {
 export const multicallv2 = async <T = any>(abi: any[], calls: Call[], options?: MulticallOptions): Promise<T> => {
   const { requireSuccess = true, ...overrides } = options || {}
   const multi = getMulticallContract()
+  console.log(multi);
+  
   const itf = new Interface(abi)
 
   const calldata = calls.map((call) => ({

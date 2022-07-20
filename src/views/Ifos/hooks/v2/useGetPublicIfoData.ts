@@ -115,10 +115,10 @@ const useGetPublicIfoData = (ifo: Ifo): PublicIfoData => {
             address,
             name: 'thresholdPoints',
           },
-          version === 3.1 && {
-            address,
-            name: 'admissionProfile',
-          },
+          // version === 3.1 && {
+          //   address,
+          //   name: 'admissionProfile',
+          // },
           version === 3.1 && {
             address,
             name: 'pointThreshold',

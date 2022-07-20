@@ -8,7 +8,7 @@ export const cakeBnbLpToken = new Token(ChainId.MAINNET, farms[1].lpAddresses[Ch
 const ifos: Ifo[] = [
   {
     id: 'duet',
-    address: '0xDF24BE326af4c1fb888f567f41D9a981A4752cf1',
+    address: '0xd19a95493e693cf75d2c8af741f4874830dc667c',
     isActive: true,
     name: 'DUET',
     poolBasic: {
