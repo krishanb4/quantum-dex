@@ -37,8 +37,8 @@ const BigCurve = styled(Box) <{ $status: PublicIfoData['status'] }>`
 `
 
 export const IfoRibbon = ({ publicIfoData }: { publicIfoData: PublicIfoData }) => {
-  // const { status } = publicIfoData
-  const status = 'live';
+  const { status } = publicIfoData
+
   let Component
   if (status === 'finished') {
     Component = <IfoRibbonEnd />
