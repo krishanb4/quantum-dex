@@ -1,5 +1,6 @@
 import { ChainId, Currency, CurrencyAmount, ETHER, Token, TokenAmount, WETH } from '@quantumdex/sdk'
 import tokens from '../config/constants/tokens'
+
 const wethfrom = tokens.wbnb
 
 export function wrappedCurrency(currency: Currency | undefined, chainId: ChainId | undefined): Token | undefined {

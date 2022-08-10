@@ -39,6 +39,7 @@ import PoolPriceBar from './PoolPriceBar'
 import Page from '../Page'
 import ConfirmAddLiquidityModal from '../Swap/components/ConfirmAddLiquidityModal'
 import tokens from '../../config/constants/tokens'
+
 const wethfrom = tokens.wbnb
 
 export default function AddLiquidity() {
