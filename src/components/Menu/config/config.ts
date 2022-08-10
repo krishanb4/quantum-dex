@@ -107,18 +107,18 @@ const config: (t: ContextApi['t'], languageCode?: string) => ConfigMenuItemsType
     icon: MoreIcon,
     hideSubNav: true,
     items: [
-      {
-        label: t('Info'),
-        href: '/info',
-      },
-       {
-        label: t('Sale'),
-        href: '/ifo',
-      },
-      {
-        label: t('AirDrop'),
-        href: '/airdrop',
-      },
+      // {
+      //   label: t('Info'),
+      //   href: '/info',
+      // },
+      //  {
+      //   label: t('Sale'),
+      //   href: '/ifo',
+      // },
+      // {
+      //   label: t('AirDrop'),
+      //   href: '/airdrop',
+      // },
       /*
       {
         label: t('Voting'),
@@ -136,12 +136,12 @@ const config: (t: ContextApi['t'], languageCode?: string) => ConfigMenuItemsType
       },
       {
         label: t('Blog'),
-        href: 'https://medium.com/pancakeswap',
+        href: 'https://medium.com/@quantumdex',
         type: DropdownMenuItemType.EXTERNAL_LINK,
       },
       {
         label: t('Docs'),
-        href: 'https://docs.pancakeswap.finance',
+        href: 'https://docs.quantumdex.finance',
         type: DropdownMenuItemType.EXTERNAL_LINK,
       },
     ],

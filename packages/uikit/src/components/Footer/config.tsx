@@ -12,7 +12,7 @@ export const footerLinks: FooterLinkType[] = [
       },
       {
         label: "Blog",
-        href: "https://pancakeswap.medium.com/",
+        href: "https://quantumdex.medium.com/",
       },
       {
         label: "Community",
@@ -58,7 +58,7 @@ export const footerLinks: FooterLinkType[] = [
       },
       {
         label: "Documentation",
-        href: "https://docs.pancakeswap.finance",
+        href: "https://docs.quantumdex.finance",
       },
       {
         label: "Bug Bounty",
@@ -80,7 +80,7 @@ export const socials = [
   {
     label: "Twitter",
     icon: TwitterIcon,
-    href: "https://twitter.com/pancakeswap",
+    href: "https://twitter.com/QuantumDEX",
   },
   {
     label: "Telegram",
@@ -88,7 +88,7 @@ export const socials = [
     items: [
       {
         label: "English",
-        href: "https://t.me/pancakeswap",
+        href: "https://t.me/quantumdex",
       },
       // {
       //   label: "Bahasa Indonesia",
@@ -148,30 +148,30 @@ export const socials = [
       // },
     ],
   },
-  {
-    label: "Reddit",
-    icon: RedditIcon,
-    href: "https://reddit.com/r/pancakeswap",
-  },
-  {
-    label: "Instagram",
-    icon: InstagramIcon,
-    href: "https://instagram.com/pancakeswap_official",
-  },
-  {
-    label: "Github",
-    icon: GithubIcon,
-    href: "https://github.com/pancakeswap/",
-  },
-  {
-    label: "Discord",
-    icon: DiscordIcon,
-    href: "https://discord.gg/pancakeswap",
-  },
+  // {
+  //   label: "Reddit",
+  //   icon: RedditIcon,
+  //   href: "https://reddit.com/r/pancakeswap",
+  // },
+  // {
+  //   label: "Instagram",
+  //   icon: InstagramIcon,
+  //   href: "https://instagram.com/pancakeswap_official",
+  // },
+  // {
+  //   label: "Github",
+  //   icon: GithubIcon,
+  //   href: "https://github.com/pancakeswap/",
+  // },
+  // {
+  //   label: "Discord",
+  //   icon: DiscordIcon,
+  //   href: "https://discord.gg/pancakeswap",
+  // },
   {
     label: "Medium",
     icon: MediumIcon,
-    href: "https://pancakeswap.medium.com/",
+    href: "https://quantumdex.medium.com/",
   },
 ];
 
