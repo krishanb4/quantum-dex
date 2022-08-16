@@ -91,7 +91,7 @@ export const UnitDisplay: React.FC = () => {
           value={cakeValue}
           currencyValue="2854.66 BADGER-HOTCROSS LP"
           placeholder="0.0"
-          unit="QTS-AME LP"
+          unit="QTM-AME LP"
         />
       </Box>
     </>
@@ -100,8 +100,8 @@ export const UnitDisplay: React.FC = () => {
 
 export const SiwtchUnits: React.FC = () => {
   const CAKE_PRICE = 69;
-  const [editingUnit, setEditingUnit] = useState<"QTS" | "USD">("QTS");
-  const conversionUnit = editingUnit === "QTS" ? "USD" : "QTS";
+  const [editingUnit, setEditingUnit] = useState<"QTM" | "USD">("QTM");
+  const conversionUnit = editingUnit === "QTM" ? "USD" : "QTM";
   const [values, setValues] = useState({
     CAKE: "1006.086957",
     USD: `${1006.086957 * CAKE_PRICE}`,
@@ -115,7 +115,7 @@ export const SiwtchUnits: React.FC = () => {
     : "0.00";
 
   const switchEditingUnits = () => {
-    const editingUnitAfterChange = editingUnit === "QTS" ? "USD" : "QTS";
+    const editingUnitAfterChange = editingUnit === "QTM" ? "USD" : "QTM";
     // This is needed to persist same value as shown for currencyValue after switching
     // otherwise user will see lots of decimals
     const valuesAfterChange = { ...values };
@@ -128,7 +128,7 @@ export const SiwtchUnits: React.FC = () => {
 
   const handleCakeChange = (input: string) => {
     const inputAsFloat = parseFloat(input);
-    if (editingUnit === "QTS") {
+    if (editingUnit === "QTM") {
       setValues({
         CAKE: input,
         USD: Number.isNaN(inputAsFloat) ? "" : `${inputAsFloat * CAKE_PRICE}`,

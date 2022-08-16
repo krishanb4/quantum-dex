@@ -26,7 +26,7 @@ export const mainnetTokens = defineTokens({
     MAINNET,
     '0x15921c21652afea747f0742e8e37f8b589c27f67',
     18,
-    'QTS',
+    'QTM',
     'QuantumDex Token',
     'https://quantumdex.finance/',
   ),

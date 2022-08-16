@@ -12,7 +12,8 @@
         "pancake",
         "default"
     ],
-    "tokens": [{
+    "tokens": [
+        {
             "name": "WAME Token",
             "symbol": "WAME",
             "address": "0xCc9bD40124EfedF6F198B8b5b50697dC635FaaC4",
@@ -54,7 +55,7 @@
         },
         {
             "name": "QuantumDex Token",
-            "symbol": "QTS",
+            "symbol": "QTM",
             "address": "0x15921c21652Afea747f0742e8E37f8b589c27F67",
             "chainId": 180,
             "decimals": 18,

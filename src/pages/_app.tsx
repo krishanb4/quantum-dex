@@ -60,7 +60,7 @@ function MyApp(props: AppProps) {
         <meta name="twitter:image" content="https://quantumdex.finance/images/hero.jpg" />
         <meta
           name="twitter:description"
-          content="The most popular AMM on AME! Earn QTS through yield farming, then stake it in Mercury Pools to earn more tokens! Initial Farm Offerings (new token launch model pioneered by QuantumDex), and more, on a platform you can trust."
+          content="The most popular AMM on AME! Earn QTM through yield farming, then stake it in Mercury Pools to earn more tokens! Initial Farm Offerings (new token launch model pioneered by QuantumDex), and more, on a platform you can trust."
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="QuantumDex - A next evolution DeFi exchange on AMEChain (AME)" />

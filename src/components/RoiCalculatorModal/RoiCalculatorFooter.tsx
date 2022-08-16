@@ -60,11 +60,11 @@ const RoiCalculatorFooter: React.FC<RoiCalculatorFooterProps> = ({
     <>
       <Text>
         {t(
-          'The Multiplier represents the proportion of QTS rewards each farm receives, as a proportion of the QTS produced each block.',
+          'The Multiplier represents the proportion of QTM rewards each farm receives, as a proportion of the QTM produced each block.',
         )}
       </Text>
       <Text my="24px">
-        {t('For example, if a 1x farm received 1 QTS per block, a 40x farm would receive 40 QTS per block.')}
+        {t('For example, if a 1x farm received 1 QTM per block, a 40x farm would receive 40 QTM per block.')}
       </Text>
       <Text>{t('This amount is already included in all APR calculations for the farm.')}</Text>
     </>,

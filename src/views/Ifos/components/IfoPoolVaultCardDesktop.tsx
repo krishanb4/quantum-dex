@@ -116,7 +116,7 @@ const IfoPoolVaultCardDesktop: React.FC<IfoPoolVaultCardDesktopProps> = ({ accou
         <Box>
           <Flex mb="4px">
             <Text fontSize="12px" color="secondary" bold mr="2px">
-              QTS
+              QTM
             </Text>
             <Text fontSize="12px" color="textSubtle" bold textTransform="uppercase">
               {t('Staked')}

@@ -4,7 +4,7 @@ import { PageMeta } from './types'
 export const DEFAULT_META: PageMeta = {
   title: 'QuantumDex',
   description:
-    'The most popular AMM on AME! Earn QTS through yield farming, then stake it in Mercury Pools to earn more tokens! Initial Farm Offerings (new token launch model pioneered by QuantumDex), and more, on a platform you can trust.',
+    'The most popular AMM on AME! Earn QTM through yield farming, then stake it in Mercury Pools to earn more tokens! Initial Farm Offerings (new token launch model pioneered by QuantumDex), and more, on a platform you can trust.',
   image: 'https://quantumdex.finance/images/hero.jpg',
 }
 

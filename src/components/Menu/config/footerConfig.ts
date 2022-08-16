@@ -23,7 +23,7 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
         href: 'https://docs.quantumdex.finance/contact-us/telegram',
       },
       {
-        label: t('QTS token'),
+        label: t('QTM token'),
         href: 'https://docs.quantumdex.finance/tokenomics/cake',
       },
       {

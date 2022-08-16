@@ -19,7 +19,7 @@ export const footerLinks: FooterLinkType[] = [
         href: "https://docs.quantumdex.finance/contact-us/telegram",
       },
       {
-        label: "QTS",
+        label: "QTM",
         href: "https://docs.quantumdex.finance/tokenomics/cake",
       },
       {

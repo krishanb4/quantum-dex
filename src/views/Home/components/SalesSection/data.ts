@@ -18,9 +18,9 @@ export const swapSectionData = (t: TranslateFunction): SalesSectionProps => ({
   images: {
     path: '/images/home/trade/',
     attributes: [
-      { src: 'QTS', alt: t('AME token') },
+      { src: 'QTM', alt: t('AME token') },
       { src: 'BTC', alt: t('BTC token') },
-      { src: 'AME', alt: t('QTS token') },
+      { src: 'AME', alt: t('QTM token') },
     ],
   },
 })
@@ -57,7 +57,7 @@ export const cakeSectionData = (t: TranslateFunction): SalesSectionProps => ({
   reverse: false,
   primaryButton: {
     to: '/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82',
-    text: t('Buy QTS'),
+    text: t('Buy QTM'),
     external: false,
   },
   secondaryButton: {

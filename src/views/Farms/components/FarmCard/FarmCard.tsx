@@ -55,7 +55,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, displayApr, removed, cakePric
       : ''
 
   const lpLabel = farm.lpSymbol && farm.lpSymbol.toUpperCase().replace('QUANTUMDEX', '')
-  const earnLabel = farm.dual ? farm.dual.earnLabel : t('QTS + Fees')
+  const earnLabel = farm.dual ? farm.dual.earnLabel : t('QTM + Fees')
 
   const liquidityUrlPathParts = getLiquidityUrlPathParts({
     quoteTokenAddress: farm.quoteToken.address,
@@ -63,7 +63,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, displayApr, removed, cakePric
   })
   const addLiquidityUrl = `${BASE_ADD_LIQUIDITY_URL}/${liquidityUrlPathParts}`
   const lpAddress = getAddress(farm.lpAddresses)
-  const isPromotedFarm = farm.token.symbol === 'QTS'
+  const isPromotedFarm = farm.token.symbol === 'QTM'
 
   return (
     <StyledCard isActive={isPromotedFarm}>
