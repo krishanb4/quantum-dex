@@ -12,7 +12,7 @@ export const footerLinks: FooterLinkType[] = [
       },
       {
         label: "Blog",
-        href: "https://quantumdex.medium.com/",
+        href: "https://medium.com/@quantumdex",
       },
       {
         label: "Community",
@@ -171,7 +171,7 @@ export const socials = [
   {
     label: "Medium",
     icon: MediumIcon,
-    href: "https://quantumdex.medium.com/",
+    href: "https://medium.com/@quantumdex",
   },
 ];
 
