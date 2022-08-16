@@ -127,7 +127,7 @@
         },
         {
             "name": "QuantumDex Token",
-            "symbol": "CAKE",
+            "symbol": "QTM",
             "address": "0xa35062141Fa33BCA92Ce69FeD37D0E8908868AAe",
             "chainId": 97,
             "decimals": 18,

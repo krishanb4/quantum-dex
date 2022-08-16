@@ -74,7 +74,7 @@ const Container = styled(Flex)`
   }
 `
 
-const AchievementFlex = styled(Flex)<{ isFinished: boolean }>`
+const AchievementFlex = styled(Flex) <{ isFinished: boolean }>`
   ${({ isFinished }) => (isFinished ? 'filter: grayscale(100%)' : '')};
   text-align: left;
 `
@@ -116,7 +116,7 @@ const IfoAchievement: React.FC<Props> = ({ ifo, publicIfoData }) => {
             <Text color="textSubtle" fontSize="12px">
               {t('Commit ~%amount% %symbol% in total to earn!', {
                 amount: minLpForAchievement,
-                symbol: ifo.currency === tokens.cake ? 'CAKE' : 'LP',
+                symbol: ifo.currency === tokens.cake ? 'QTM' : 'LP',
               })}
             </Text>
           ) : (

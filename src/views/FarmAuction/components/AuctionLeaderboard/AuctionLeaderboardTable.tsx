@@ -30,7 +30,7 @@ const LeaderboardContainer = styled.div`
   }
 `
 
-const GridCell = styled(Flex)<{ isTopPosition: boolean }>`
+const GridCell = styled(Flex) <{ isTopPosition: boolean }>`
   height: 65px;
   align-items: center;
   border-bottom: 1px solid ${({ theme }) => theme.colors.cardBorder};
@@ -146,7 +146,7 @@ const AuctionLeaderboardTable: React.FC<{ bidders: Bidder[]; noBidsText: string 
           pr={[null, null, '24px']}
           py="16px"
         >
-          {t('CAKE bid')}
+          {t('QTM bid')}
         </Text>
         <Box />
         {/* Rows */}

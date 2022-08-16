@@ -30,14 +30,14 @@ const BottomNav: React.FC<BottomNavProps> = ({ items = [], activeItem = "", acti
                 >
                   <Box>
                     <NotificationDot show={!!statusColor} color={statusColor}>
-                      {/* <BottomNavItem
+                      <BottomNavItem
                         href={href}
                         isActive={href === activeItem}
                         label={label}
                         icon={icon}
                         fillIcon={fillIcon}
                         showItemsOnMobile={showItemsOnMobile}
-                      /> */}
+                      />
                     </NotificationDot>
                   </Box>
                 </DropdownMenu>
