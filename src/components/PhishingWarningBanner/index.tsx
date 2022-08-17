@@ -8,7 +8,7 @@ const Container = styled(Flex)`
   height: 100%;
   padding: 12px;
   align-items: center;
-  background: llinear-gradient(139.73deg,#E5FDFF 0%,#65CCB8 100%);
+  background-color: llinear-gradient(139.73deg,#E5FDFF 0%,#65CCB8 100%);
   ${({ theme }) => theme.mediaQueries.md} {
     padding: 0px;
     background: linear-gradient(180deg,#dcfafa 0%,#85d8ca 100%);
@@ -64,7 +64,7 @@ const PhishingWarningBanner: React.FC = () => {
     </>
   )
   return (
-    <Container className="warning-banner">
+    <Container className="warning-banner" style={{ backgroundColor: '#8b7171' }} >
       {isMobile || isMd ? (
         <>
           <Box>{warningTextComponent}</Box>
