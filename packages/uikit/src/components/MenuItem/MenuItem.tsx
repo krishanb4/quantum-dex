@@ -12,7 +12,7 @@ const MenuItem: React.FC<MenuItemProps> = ({
   ...props
 }) => {
   const { linkComponent } = useContext(MenuContext);
-  const itemLinkProps: unknown = href
+  const itemLinkProps: any = href
     ? {
       as: linkComponent,
       href,
@@ -22,7 +22,7 @@ const MenuItem: React.FC<MenuItemProps> = ({
     };
   return (
     <StyledMenuItemContainer $isActive={isActive} $variant={variant}>
-      <StyledMenuItem $isActive={isActive} $variant={variant} $statusColor={statusColor} {...props}>
+      <StyledMenuItem {...itemLinkProps} $isActive={isActive} $variant={variant} $statusColor={statusColor} {...props}>
         {children}
       </StyledMenuItem>
     </StyledMenuItemContainer>
