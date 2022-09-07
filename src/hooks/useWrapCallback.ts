@@ -9,7 +9,7 @@ import { useWBNBContract } from './useContract'
 import { useCallWithGasPrice } from './useCallWithGasPrice'
 import tokens from '../config/constants/tokens'
 
-const wethfrom = tokens.wbnb
+// const wethfrom = tokens.wbnb
 
 export enum WrapType {
   NOT_APPLICABLE,
@@ -44,7 +44,7 @@ export default function useWrapCallback(
 
     const sufficientBalance = inputAmount && balance && !balance.lessThan(inputAmount)
 
-    if (inputCurrency === ETHER && currencyEquals(wethfrom, outputCurrency)) {
+    if (inputCurrency === ETHER && currencyEquals(WETH[chainId], outputCurrency)) {
       return {
         wrapType: WrapType.WRAP,
         execute:
@@ -63,7 +63,7 @@ export default function useWrapCallback(
         inputError: sufficientBalance ? undefined : t('Insufficient AME balance'),
       }
     }
-    if (currencyEquals(wethfrom, inputCurrency) && outputCurrency === ETHER) {
+    if (currencyEquals(WETH[chainId], inputCurrency) && outputCurrency === ETHER) {
       return {
         wrapType: WrapType.UNWRAP,
         execute:

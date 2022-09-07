@@ -20,7 +20,7 @@ export const footerLinks: FooterLinkType[] = [
       },
       {
         label: "QTM",
-        href: "https://docs.quantumdex.finance/tokenomics/cake",
+        href: "https://docs.quantumdex.finance/tokenomics/qtm",
       },
       {
         label: "—",

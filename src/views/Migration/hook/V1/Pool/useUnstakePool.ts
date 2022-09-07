@@ -22,7 +22,6 @@ const sousEmergencyUnstake = (sousChefContract: any) => {
 const useUnstakePool = (sousId: number, enableEmergencyWithdraw = false) => {
   const masterChefV1Contract = useMasterchefV1()
   const sousChefContract = useSousChef(sousId)
-
   const handleUnstake = useCallback(
     async (amount: string, decimals: number) => {
       if (sousId === 0) {

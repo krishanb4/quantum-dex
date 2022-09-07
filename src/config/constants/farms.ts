@@ -11,9 +11,9 @@ const farms: SerializedFarmConfig[] = [
   {
     pid: 0,
     v1pid: 0,
-    lpSymbol: 'AME',
+    lpSymbol: 'QTM',
     lpAddresses: {
-      180: '0xA560e759192e53d79f40933dBAF252c4e440B955',
+      180: '0x4EBBc15D89DCD5A76E029Fb3e41B525C2D6D1F36',
       97: '',
       // 56: '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82',
     },

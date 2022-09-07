@@ -52,7 +52,7 @@ const pools: SerializedPoolConfig[] = [
     earningToken: serializedTokens.cake,
     contractAddress: {
       97: '',
-      180: '0xBf1712AdfCD875F7DCfb054df4933cBdc8f81d64',
+      180: '0x6319261da032483ac76C03068d5452b8e803de2C',
       // 56: '0xa5f8C5Dbd5F286960b9d90548680aE5ebFf07652',
     },
     poolCategory: PoolCategory.CORE,
@@ -60,6 +60,21 @@ const pools: SerializedPoolConfig[] = [
     tokenPerBlock: '10',
     sortOrder: 1,
     isFinished: false,
+  },
+  {
+    sousId: 20,
+    stakingToken: serializedTokens.bnb,
+    earningToken: serializedTokens.cake,
+    contractAddress: {
+      97: '',
+      180: '0x77Af3109ea886625942933E5515cdFF3b1ce54Da',
+      // 56: '0x555Ea72d7347E82C614C16f005fA91cAf06DCB5a',
+    },
+    poolCategory: PoolCategory.BINANCE,
+    harvest: true,
+    sortOrder: 999,
+    tokenPerBlock: '0.5',
+    version: 3,
   },
   // {
   //   sousId: 278,
@@ -3501,21 +3516,7 @@ const pools: SerializedPoolConfig[] = [
   //   sortOrder: 999,
   //   isFinished: true,
   // },
-  {
-    sousId: 20,
-    stakingToken: serializedTokens.bnb,
-    earningToken: serializedTokens.cake,
-    contractAddress: {
-      97: '',
-      180: '0xF04870e2265De0357b62c40351311130DaA54Dfd'
-      // 56: '0x555Ea72d7347E82C614C16f005fA91cAf06DCB5a',
-    },
-    poolCategory: PoolCategory.BINANCE,
-    harvest: true,
-    tokenPerBlock: '0.5',
-    sortOrder: 999,
-    isFinished: false,
-  },
+
   // {
   //   sousId: 19,
   //   stakingToken: serializedTokens.cake,
@@ -3727,6 +3728,5 @@ const pools: SerializedPoolConfig[] = [
   //   tokenPerBlock: '7.502',
   // },
 ].filter((p) => !!p.contractAddress[CHAIN_ID])
-
 
 export default pools

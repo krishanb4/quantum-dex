@@ -34,7 +34,6 @@ const LockedStakingApy: React.FC<LockedStakingApyPropsType> = ({ stakingToken, s
   }, [userData?.balance?.cakeAsBigNumber])
 
   const currentLockedAmount = getBalanceNumber(currentLockedAmountAsBigNumber)
-
   const usdValueStaked = useBUSDCakeAmount(currentLockedAmount)
 
   const { weekDuration, lockEndDate, secondDuration, remainingTime } = useUserDataInVaultPrensenter({

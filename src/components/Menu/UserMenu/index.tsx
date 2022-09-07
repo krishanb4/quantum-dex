@@ -6,6 +6,7 @@ import {
   RefreshIcon,
   useModal,
   UserMenu as UIKitUserMenu,
+  UserMenuNetwork as UIKitUserMenuNetwork,
   UserMenuDivider,
   UserMenuItem,
   UserMenuVariant,
@@ -40,6 +41,7 @@ const UserMenu = () => {
   const avatarSrc = profile?.nft?.image?.thumbnail
   const hasLowBnbBalance = fetchStatus === FetchStatus.Fetched && balance.lte(LOW_BNB_BALANCE)
   const [userMenuText, setUserMenuText] = useState<string>('')
+  const [userMenuTextNetwork, setUserMenuTextNetwork] = useState<string>('AME Chain')
   const [userMenuVariable, setUserMenuVariable] = useState<UserMenuVariant>('default')
   const isWrongNetwork: boolean = error && error instanceof UnsupportedChainIdError
 
@@ -59,6 +61,13 @@ const UserMenu = () => {
     } else {
       onPresentWalletModal()
     }
+  }
+
+  const onClickGoAme = () => {
+    window.location.href = 'https://test.quantumdex.finance/'
+  }
+  const onClickGoDoge = () => {
+    window.location.href = 'https://doge.quantumdex.finance/'
   }
 
   const UserMenuItems = () => {
@@ -92,32 +101,75 @@ const UserMenu = () => {
       </>
     )
   }
+  const UserMenuItemsNetwork = () => {
+    return (
+      <>
+        <UserMenuItem as="button" disabled onClick={onClickGoAme}>
+          AME Chain
+        </UserMenuItem>
+        <UserMenuItem as="button" onClick={onClickGoDoge}>
+          DOGE Chain
+        </UserMenuItem>
+      </>
+    )
+  }
 
   if (account) {
     return (
-      <UIKitUserMenu account={account} avatarSrc={avatarSrc} text={userMenuText} variant={userMenuVariable}>
-        <UserMenuItems />
-      </UIKitUserMenu>
+      <>
+        <UIKitUserMenuNetwork
+          account="AME Chain"
+          avatarSrc={avatarSrc}
+          text={userMenuTextNetwork}
+          variant={userMenuVariable}
+        >
+          <UserMenuItemsNetwork />
+        </UIKitUserMenuNetwork>
+        <UIKitUserMenu account={account} avatarSrc={avatarSrc} text={userMenuText} variant={userMenuVariable}>
+          <UserMenuItems />
+        </UIKitUserMenu>
+      </>
     )
   }
 
   if (isWrongNetwork) {
     return (
-      <UIKitUserMenu text={t('Network')} variant="danger">
-        <UserMenuItems />
-      </UIKitUserMenu>
+      <>
+        <UIKitUserMenuNetwork
+          account={account}
+          avatarSrc={avatarSrc}
+          text={userMenuTextNetwork}
+          variant={userMenuVariable}
+        >
+          <UserMenuItemsNetwork />
+        </UIKitUserMenuNetwork>
+        <UIKitUserMenu text={t('Network')} variant="danger">
+          <UserMenuItems />
+        </UIKitUserMenu>
+      </>
     )
   }
 
   return (
-    <ConnectWalletButton scale="sm">
-      <Box display={['none', , , 'block']}>
-        <Trans>Connect Wallet</Trans>
-      </Box>
-      <Box display={['block', , , 'none']}>
-        <Trans>Connect</Trans>
-      </Box>
-    </ConnectWalletButton>
+    <>
+      <UIKitUserMenuNetwork
+        account={account}
+        avatarSrc={avatarSrc}
+        text={userMenuTextNetwork}
+        variant={userMenuVariable}
+      >
+        <UserMenuItemsNetwork />
+      </UIKitUserMenuNetwork>
+
+      <ConnectWalletButton scale="sm">
+        <Box display={['none', , , 'block']}>
+          <Trans>Connect Wallet</Trans>
+        </Box>
+        <Box display={['block', , , 'none']}>
+          <Trans>Connect</Trans>
+        </Box>
+      </ConnectWalletButton>
+    </>
   )
 }
 

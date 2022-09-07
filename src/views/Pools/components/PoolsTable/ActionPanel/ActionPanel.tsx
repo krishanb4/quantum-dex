@@ -148,6 +148,8 @@ const YieldBoostDurationRow = ({ lockEndTime, lockStartTime }) => {
     lockStartTime,
   })
 
+  console.log(weekDuration)
+
   return (
     <>
       <YieldBoostRow secondDuration={secondDuration} />
