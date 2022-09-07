@@ -108,7 +108,7 @@ const UserMenu = () => {
           AME Chain
         </UserMenuItem>
         <UserMenuItem as="button" onClick={onClickGoDoge}>
-          DOGE Chain
+          DOGE Chain(test net)
         </UserMenuItem>
       </>
     )
