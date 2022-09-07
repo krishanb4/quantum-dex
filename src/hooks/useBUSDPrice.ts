@@ -1,5 +1,6 @@
-import { Currency, currencyEquals, JSBI, Price } from '@quantumdex/sdk'
+import { Currency, currencyEquals, JSBI, Price, WETH } from '@quantumdex/sdk'
 import tokens from 'config/constants/tokens'
+
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
 import { useMemo } from 'react'
 import { multiplyPriceByAmount } from 'utils/prices'
@@ -15,11 +16,16 @@ const { wbnb: WBNB, busd } = tokens
 export default function useBUSDPrice(currency?: Currency): Price | undefined {
   const { chainId } = useActiveWeb3React()
   const wrapped = wrappedCurrency(currency, chainId)
+  // console.log(wrapped);
+
   const tokenPairs: [Currency | undefined, Currency | undefined][] = useMemo(
     () => [
-      [chainId && wrapped && currencyEquals(WBNB, wrapped) ? undefined : currency, chainId ? WBNB : undefined],
-      [wrapped?.equals(busd) ? undefined : wrapped, busd],
-      [chainId ? WBNB : undefined, busd],
+      [
+        chainId && wrapped && currencyEquals(WETH[chainId], wrapped) ? undefined : currency,
+        chainId ? WETH[chainId] : undefined,
+      ],
+      [wrapped?.equals(tokens.busd) ? undefined : wrapped, tokens.busd],
+      [chainId ? WETH[chainId] : undefined, busd],
     ],
     [chainId, currency, wrapped],
   )
@@ -30,9 +36,9 @@ export default function useBUSDPrice(currency?: Currency): Price | undefined {
       return undefined
     }
     // handle weth/eth
-    if (wrapped.equals(WBNB)) {
+    if (wrapped.equals(WETH[chainId])) {
       if (busdPair) {
-        const price = busdPair.priceOf(WBNB)
+        const price = busdPair.priceOf(WETH[chainId])
         return new Price(currency, busd, price.denominator, price.numerator)
       }
       return undefined
@@ -42,9 +48,9 @@ export default function useBUSDPrice(currency?: Currency): Price | undefined {
       return new Price(busd, busd, '1', '1')
     }
 
-    const ethPairETHAmount = ethPair?.reserveOf(WBNB)
+    const ethPairETHAmount = ethPair?.reserveOf(WETH[chainId])
     const ethPairETHBUSDValue: JSBI =
-      ethPairETHAmount && busdEthPair ? busdEthPair.priceOf(WBNB).quote(ethPairETHAmount).raw : JSBI.BigInt(0)
+      ethPairETHAmount && busdEthPair ? busdEthPair.priceOf(WETH[chainId]).quote(ethPairETHAmount).raw : JSBI.BigInt(0)
 
     // all other tokens
     // first try the busd pair
@@ -82,6 +88,7 @@ export const useBUSDCurrencyAmount = (currency: Currency, amount: number): numbe
 
 export const useBUSDCakeAmount = (amount: number): number | undefined => {
   const cakeBusdPrice = useCakeBusdPrice()
+  console.log(cakeBusdPrice)
 
   if (cakeBusdPrice) {
     return multiplyPriceByAmount(cakeBusdPrice, amount)

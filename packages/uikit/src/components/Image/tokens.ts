@@ -5,8 +5,8 @@ const tokens = {
   cake: {
     symbol: "QTM",
     address: {
-      180: '0x1B1Eb7C5bBBB0552fa430fB677393fe320E0e719',
-     // 56: "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",
+      180: "0x4EBBc15D89DCD5A76E029Fb3e41B525C2D6D1F36",
+      // 56: "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",
       97: "0xa35062141Fa33BCA92Ce69FeD37D0E8908868AAe",
     },
     decimals: 18,
@@ -438,7 +438,7 @@ const tokens = {
   wbnb: {
     symbol: "wAME",
     address: {
-    //  56: "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+      //  56: "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
       97: "0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd",
       180: "0xCc9bD40124EfedF6F198B8b5b50697dC635FaaC4",
     },
@@ -583,8 +583,8 @@ const tokens = {
   syrup: {
     symbol: "MERCURY",
     address: {
-      180: "0x85d2631d6AE7429B9071c95C309a8a248A2F9A5e",
-     // 56: "0x009cF7bC57584b7998236eff51b98A168DceA9B0",
+      180: "0x9a466194F39FFA6804dBEeC380EBFCB5cf96C87a",
+      // 56: "0x009cF7bC57584b7998236eff51b98A168DceA9B0",
       97: "0xfE1e507CeB712BDe086f3579d2c03248b2dB77f9",
     },
     decimals: 18,
@@ -611,8 +611,8 @@ const tokens = {
   busd: {
     symbol: "QUSD",
     address: {
-      180: '0xE84E03AA9544C91075e58c5Eb909D97092fc9B68',
-     // 56: "0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56",
+      180: "0xE84E03AA9544C91075e58c5Eb909D97092fc9B68",
+      // 56: "0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56",
       97: "",
     },
     decimals: 18,

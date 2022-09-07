@@ -24,11 +24,19 @@ export const mainnetTokens = defineTokens({
   bnb: new Token(MAINNET, '0xCc9bD40124EfedF6F198B8b5b50697dC635FaaC4', 18, 'AME', 'AME', 'https://amescan.io/'),
   cake: new Token(
     MAINNET,
-    '0x15921c21652afea747f0742e8e37f8b589c27f67',
+    '0x4EBBc15D89DCD5A76E029Fb3e41B525C2D6D1F36',
     18,
     'QTM',
     'QuantumDex Token',
     'https://quantumdex.finance/',
+  ),
+  syrup: new Token(
+    MAINNET,
+    '0x9a466194F39FFA6804dBEeC380EBFCB5cf96C87a',
+    18,
+    'MERCURY',
+    'Mercury Token',
+    'https://pancakeswap.finance/',
   ),
   // gmi: new Token(MAINNET, '0x93D8d25E3C9A847a5Da79F79ecaC89461FEcA846', 18, 'GMI', 'Gamifi', 'https://gamifi.gg/'),
   // tlos: new Token(MAINNET, '0xb6C53431608E626AC81a9776ac3e999c5556717c', 18, 'TLOS', 'Telos', 'https://www.telos.net/'),
@@ -211,14 +219,7 @@ export const mainnetTokens = defineTokens({
   //   'Blink Token',
   //   'https://blink.wink.org',
   // ),
-  syrup: new Token(
-    MAINNET,
-    '0x85d2631d6ae7429b9071c95c309a8a248a2f9a5e',
-    18,
-    'MERCURY',
-    'Mercury Token',
-    'https://pancakeswap.finance/',
-  ),
+
   // pha: new Token(
   //   MAINNET,
   //   '0x0112e557d400474717056C4e6D40eDD846F38351',
