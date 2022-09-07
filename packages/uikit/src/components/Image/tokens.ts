@@ -5,7 +5,7 @@ const tokens = {
   cake: {
     symbol: "QTM",
     address: {
-      180: "0x4EBBc15D89DCD5A76E029Fb3e41B525C2D6D1F36",
+      568: "0x6662C240157580fCab6F367D0d3A0AB2bc82e5d2",
       // 56: "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",
       97: "0xa35062141Fa33BCA92Ce69FeD37D0E8908868AAe",
     },
@@ -583,7 +583,7 @@ const tokens = {
   syrup: {
     symbol: "MERCURY",
     address: {
-      180: "0x9a466194F39FFA6804dBEeC380EBFCB5cf96C87a",
+      568: "0x4EBBc15D89DCD5A76E029Fb3e41B525C2D6D1F36",
       // 56: "0x009cF7bC57584b7998236eff51b98A168DceA9B0",
       97: "0xfE1e507CeB712BDe086f3579d2c03248b2dB77f9",
     },

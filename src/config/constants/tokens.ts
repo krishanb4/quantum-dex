@@ -24,7 +24,7 @@ export const mainnetTokens = defineTokens({
   bnb: new Token(MAINNET, '0xCc9bD40124EfedF6F198B8b5b50697dC635FaaC4', 18, 'AME', 'AME', 'https://amescan.io/'),
   cake: new Token(
     MAINNET,
-    '0x4EBBc15D89DCD5A76E029Fb3e41B525C2D6D1F36',
+    '0x6662C240157580fCab6F367D0d3A0AB2bc82e5d2',
     18,
     'QTM',
     'QuantumDex Token',

@@ -41,7 +41,7 @@ const UserMenu = () => {
   const avatarSrc = profile?.nft?.image?.thumbnail
   const hasLowBnbBalance = fetchStatus === FetchStatus.Fetched && balance.lte(LOW_BNB_BALANCE)
   const [userMenuText, setUserMenuText] = useState<string>('')
-  const [userMenuTextNetwork, setUserMenuTextNetwork] = useState<string>('AME Chain')
+  const [userMenuTextNetwork, setUserMenuTextNetwork] = useState<string>('DOGE Chain')
   const [userMenuVariable, setUserMenuVariable] = useState<UserMenuVariant>('default')
   const isWrongNetwork: boolean = error && error instanceof UnsupportedChainIdError
 
@@ -104,11 +104,11 @@ const UserMenu = () => {
   const UserMenuItemsNetwork = () => {
     return (
       <>
-        <UserMenuItem as="button" disabled onClick={onClickGoAme}>
+        <UserMenuItem as="button" onClick={onClickGoAme}>
           AME Chain
         </UserMenuItem>
-        <UserMenuItem as="button" onClick={onClickGoDoge}>
-          DOGE Chain
+        <UserMenuItem as="button" disabled onClick={onClickGoDoge}>
+          DOGE Chain(test net)
         </UserMenuItem>
       </>
     )
@@ -118,7 +118,7 @@ const UserMenu = () => {
     return (
       <>
         <UIKitUserMenuNetwork
-          account="AME Chain"
+          account="DOGE Chain"
           avatarSrc={avatarSrc}
           text={userMenuTextNetwork}
           variant={userMenuVariable}
